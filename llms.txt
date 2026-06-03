@@ -1,0 +1,21 @@
+# LatinShare
+
+> Microsoft Solutions Partner especializado en acelerar la productividad de organizaciones en Latinoamérica con Microsoft 365, Power Platform, Azure, Dynamics 365 y Copilot.
+
+LatinShare ofrece consultoría, implementación, licenciamiento y capacitación sobre el ecosistema Microsoft. Opera en Chile, México y la región. Contacto: contacto@latinshare.com.
+
+## Páginas
+- [Inicio](https://www.latinshare.com/): Propuesta de valor, soluciones, tecnologías y licencias.
+- [Quiénes somos](https://www.latinshare.com/about): Historia (desde 2014), equipo y valores.
+- [Servicios](https://www.latinshare.com/services): Power Platform, Microsoft 365, Copilot e IA, Azure Cloud, Dynamics 365; metodología en 4 fases.
+- [Herramientas](https://www.latinshare.com/tools): Ecosistema Microsoft (Copilot, Teams, Power Apps, Power Automate, Power BI, Azure, Dataverse, Entra ID, Dynamics 365) y soluciones integrales.
+- [Licencias](https://www.latinshare.com/licenses): Asesoría de licenciamiento Microsoft 365, educacional y Azure; planes y precios.
+- [Eventos](https://www.latinshare.com/events): Talleres y webinars sobre el ecosistema Microsoft.
+- [Contacto](https://www.latinshare.com/contact): Formulario de contacto y cotización.
+
+## Servicios principales
+- Modern Work con Microsoft 365
+- Automatización con Power Platform (low-code)
+- Datos y analítica en Azure
+- IA aplicada con Copilot y Copilot Studio
+- Licenciamiento y soporte CSP

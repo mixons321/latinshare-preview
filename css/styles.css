@@ -1,0 +1,55 @@
+/* ===== Tokens de marca LatinShare (de src/app/globals.css) ===== */
+:root {
+  --color-primary-orange: #F26522;
+  --color-primary-blue: #00AEEF;
+  --color-primary-green: #225640;
+  --color-text-dark: #2A3540;
+  --font-display: 'Funnel Display', sans-serif;
+  --font-body: 'Nunito', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); color: #171717; background: #fff; }
+
+h1, h2, h3, h4, .font-display { font-family: var(--font-display); }
+
+/* Botón primario oscuro (de page.tsx) */
+.btn-primary {
+  font-family: var(--font-display);
+  font-weight: 600; color: #fff; height: 55px;
+  padding: 8px 36px; border-radius: 50px; border: 1px solid #30363c;
+  background: linear-gradient(to bottom, #0d1115, #30363c);
+  box-shadow: -1px 2px 2px 0 rgba(0,0,0,.26), -2px 5px 3px 0 rgba(0,0,0,.15), -4px 9px 4px 0 rgba(0,0,0,.04);
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: transform .2s; white-space: nowrap;
+}
+.btn-primary:hover { transform: translateY(-2px); }
+
+/* Botón secundario (borde) */
+.btn-secondary {
+  font-family: var(--font-display); font-weight: 400; color: #0f172a;
+  height: 55px; padding: 8px 36px; border-radius: 50px; border: 1px solid #2a3540;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: background .2s; white-space: nowrap;
+}
+.btn-secondary:hover { background: rgba(255,255,255,.5); }
+
+/* Botón naranja (licencias/eventos) */
+.btn-orange {
+  font-family: var(--font-display); font-weight: 600; color: #fff;
+  height: 48px; padding: 8px 28px; border-radius: 50px; background: var(--color-primary-orange);
+  display: inline-flex; align-items: center; justify-content: center; transition: opacity .2s;
+}
+.btn-orange:hover { opacity: .9; }
+
+/* Label naranja de sección */
+.section-label { color: var(--color-primary-orange); font-family: var(--font-display); font-weight: 600; }
+
+/* Animaciones (de globals.css) */
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-20px)} }
+@keyframes fade-in { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-fade-in { animation: fade-in .5s ease-out; }
+
+/* Enlace activo del nav (lo aplica include.js) */
+.nav-link.is-active { color: var(--color-primary-orange); border-color: var(--color-primary-orange); }
