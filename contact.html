@@ -110,7 +110,7 @@
       <div class="absolute inset-0 z-0">
         <img src="assets/Hero_contacto.svg" alt="" class="w-full h-full object-cover object-right opacity-40 md:opacity-100" />
       </div>
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-3xl">
+      <div class="container-site relative z-10">
         <nav aria-label="Breadcrumb" class="mb-4">
           <ol class="flex items-center gap-2 text-sm text-gray-500">
             <li><a href="index.html" class="hover:text-[#F26522]">Inicio</a></li>
@@ -119,8 +119,8 @@
           </ol>
         </nav>
         <p class="section-label mb-3">Contacto</p>
-        <h1 class="text-4xl md:text-5xl font-bold text-[#171717] leading-tight mb-5">Hablemos sobre tu próximo proyecto</h1>
-        <p class="text-lg text-[#262626] mb-8">Estamos listos para ayudarte a potenciar tus soluciones con Microsoft 365, Power Platform, Azure y Dynamics 365. Contáctanos y un especialista de LatinShare te responderá a la brevedad.</p>
+        <h1 class="text-[30px] sm:text-5xl font-extrabold text-[#171717] leading-[1.05] mb-5 max-w-[560px]">Hablemos sobre tu próximo proyecto</h1>
+        <p class="text-base text-[#262626] leading-relaxed mb-8 max-w-[560px]">Estamos listos para ayudarte a potenciar tus soluciones con Microsoft 365, Power Platform, Azure y Dynamics 365. Contáctanos y un especialista de LatinShare te responderá a la brevedad.</p>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="#form" class="btn-primary">Solicitar Cotización</a>
           <a href="contact.html#form" class="btn-secondary">Habla con un Especialista</a>
@@ -130,17 +130,17 @@
 
     <!-- ===== FORMULARIO "¡Contáctanos!" ===== -->
     <section id="form" class="py-12 sm:py-20 bg-gray-50">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
+      <div class="container-site max-w-2xl">
         <header class="text-center mb-10">
           <p class="section-label mb-2">Transformamos tu empresa</p>
           <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">&#161;Cont&#225;ctanos!</h2>
         </header>
         <form class="js-contact-form space-y-4" action="https://formspree.io/f/REEMPLAZAR" method="POST">
-          <input class="w-full px-4 py-3 rounded-lg border border-gray-200" type="text" name="nombre" placeholder="Nombre y Apellido" required />
-          <input class="w-full px-4 py-3 rounded-lg border border-gray-200" type="text" name="empresa" placeholder="Nombre de la empresa" />
-          <input class="w-full px-4 py-3 rounded-lg border border-gray-200" type="tel" name="telefono" placeholder="Teléfono (indique código de país)" />
-          <input class="w-full px-4 py-3 rounded-lg border border-gray-200" type="email" name="email" placeholder="Email" required />
-          <input class="w-full px-4 py-3 rounded-lg border border-gray-200" type="text" name="cargo" placeholder="Cargo y puesto" />
+          <input class="form-input" type="text" name="nombre" placeholder="Nombre y Apellido" required />
+          <input class="form-input" type="text" name="empresa" placeholder="Nombre de la empresa" />
+          <input class="form-input" type="tel" name="telefono" placeholder="Teléfono (indique código de país)" />
+          <input class="form-input" type="email" name="email" placeholder="Email" required />
+          <input class="form-input" type="text" name="cargo" placeholder="Cargo y puesto" />
           <fieldset class="grid grid-cols-2 gap-2">
             <legend class="text-sm text-gray-600 mb-2 col-span-2">Perfil de la organización</legend>
             <label class="flex items-center gap-2 text-sm"><input type="radio" name="perfil" value="startup" /> Startup</label>
@@ -150,7 +150,7 @@
             <label class="flex items-center gap-2 text-sm"><input type="radio" name="perfil" value="education" /> Sector educativo</label>
             <label class="flex items-center gap-2 text-sm"><input type="radio" name="perfil" value="other" /> Otro</label>
           </fieldset>
-          <textarea class="w-full px-4 py-3 rounded-lg border border-gray-200" name="mensaje" rows="4" placeholder="Necesidad y comentarios" required></textarea>
+          <textarea class="form-input" name="mensaje" rows="4" placeholder="Necesidad y comentarios" required></textarea>
           <button type="submit" class="btn-primary w-full">Enviar</button>
           <p class="js-form-status text-sm text-center" role="status" aria-live="polite"></p>
         </form>
@@ -159,7 +159,7 @@
 
     <!-- ===== BANDA "Estamos para ayudarte." ===== -->
     <section class="py-12 sm:py-16 bg-[#0d1115] text-white">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="container-site flex flex-col md:flex-row items-center justify-between gap-6">
         <div>
           <h2 class="text-2xl md:text-3xl font-bold mb-2">Estamos para ayudarte.</h2>
           <p class="text-gray-300 text-sm max-w-md">Respondemos en menos de 24 horas. Nuestro equipo de especialistas Microsoft está listo para analizar tu caso y ofrecerte la mejor solución.</p>
@@ -170,7 +170,7 @@
 
     <!-- ===== NEWSLETTER ===== -->
     <section class="py-16 bg-white border-t border-gray-100">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="container-site flex flex-col md:flex-row items-center justify-between gap-6">
         <div>
           <h2 class="text-2xl font-bold mb-2 text-[#171717]">Suscríbete a nuestro newsletter</h2>
           <p class="text-gray-500 text-sm">Te mantendremos actualizado con ofertas, noticias y próximos eventos.</p>

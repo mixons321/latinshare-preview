@@ -113,7 +113,7 @@
       <div class="absolute inset-0 z-0">
         <img src="assets/Hero_licencias.svg" alt="" class="w-full h-full object-cover object-right opacity-40 md:opacity-100" />
       </div>
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-3xl">
+      <div class="container-site relative z-10">
         <nav aria-label="Breadcrumb" class="mb-4">
           <ol class="flex items-center gap-2 text-sm text-gray-500">
             <li><a href="index.html" class="hover:text-[#F26522]">Inicio</a></li>
@@ -122,8 +122,8 @@
           </ol>
         </nav>
         <p class="section-label mb-3">Licencias</p>
-        <h1 class="text-4xl md:text-5xl font-bold text-[#171717] leading-tight mb-5">Licencias Microsoft con asesoría experta</h1>
-        <p class="text-lg text-[#262626] mb-8">Optimizamos tus licencias para asegurar un aprovechamiento digital de tu inversión. Mejoramos el valor de tus activos de software 365. Azure, Dynamics 365 y Power Platform con nuestra asesoría especializada.</p>
+        <h1 class="text-[30px] sm:text-5xl font-extrabold text-[#171717] leading-[1.05] mb-5 max-w-[560px]">Licencias Microsoft con asesoría experta</h1>
+        <p class="text-base text-[#262626] leading-relaxed mb-8 max-w-[560px]">Optimizamos tus licencias para asegurar un aprovechamiento digital de tu inversión. Mejoramos el valor de tus activos de software 365. Azure, Dynamics 365 y Power Platform con nuestra asesoría especializada.</p>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="#cotizar" class="btn-primary">Cotiza Ahora</a>
           <a href="contact.html" class="btn-secondary">Habla con un Especialista</a>
@@ -133,7 +133,7 @@
 
     <!-- ===== ¿POR QUÉ COMPRAR TUS LICENCIAS CON LATINSHARE? (6 beneficios) ===== -->
     <section class="py-12 sm:py-20 bg-white">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="container-site">
         <header class="text-center mb-12">
           <p class="section-label mb-2">Beneficios</p>
           <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">¿Por qué comprar tus licencias con LatinShare?</h2>
@@ -201,7 +201,7 @@
 
     <!-- ===== PLANES Y PRODUCTOS DESTACADOS (4 pricing plans) ===== -->
     <section class="py-12 sm:py-20 bg-gray-50">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="container-site">
         <header class="text-center mb-12">
           <p class="section-label mb-2">Planes</p>
           <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Planes y productos destacados</h2>
@@ -281,7 +281,7 @@
 
     <!-- ===== FAQ CON ACORDEÓN ===== -->
     <section id="faq" class="py-12 sm:py-20 bg-white">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+      <div class="container-site max-w-3xl">
         <header class="mb-10">
           <p class="section-label mb-2">FAQ</p>
           <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">¿Tienes preguntas sobre las licencias Microsoft?</h2>
@@ -330,7 +330,7 @@
 
     <!-- ===== FORMULARIO DE COTIZACIÓN ===== -->
     <section id="cotizar" class="py-12 sm:py-20 bg-gray-50">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
+      <div class="container-site max-w-2xl">
         <header class="text-center mb-10">
           <p class="section-label mb-2">Cotización</p>
           <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Impulsa tu estrategia digital</h2>
@@ -338,14 +338,14 @@
         </header>
         <form class="js-contact-form space-y-4" action="https://formspree.io/f/REEMPLAZAR" method="POST">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <input class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white" type="text" name="nombre" placeholder="Nombre y Apellido" required />
-            <input class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white" type="text" name="empresa" placeholder="Nombre de la empresa" />
+            <input class="form-input bg-white" type="text" name="nombre" placeholder="Nombre y Apellido" required />
+            <input class="form-input bg-white" type="text" name="empresa" placeholder="Nombre de la empresa" />
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <input class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white" type="tel" name="telefono" placeholder="Teléfono (indique código de país)" />
-            <input class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white" type="email" name="email" placeholder="Email" required />
+            <input class="form-input bg-white" type="tel" name="telefono" placeholder="Teléfono (indique código de país)" />
+            <input class="form-input bg-white" type="email" name="email" placeholder="Email" required />
           </div>
-          <input class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white" type="text" name="cargo" placeholder="Cargo y puesto" />
+          <input class="form-input bg-white" type="text" name="cargo" placeholder="Cargo y puesto" />
           <fieldset class="rounded-lg border border-gray-200 bg-white p-4">
             <legend class="text-sm text-gray-600 font-semibold mb-3">Perfil de la organización</legend>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -357,7 +357,7 @@
               <label class="flex items-center gap-2 text-sm text-gray-700"><input type="radio" name="perfil" value="other" /> Otro</label>
             </div>
           </fieldset>
-          <textarea class="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white" name="mensaje" rows="4" placeholder="Necesidad y comentarios"></textarea>
+          <textarea class="form-input bg-white" name="mensaje" rows="4" placeholder="Necesidad y comentarios"></textarea>
           <button type="submit" class="btn-primary w-full">Enviar</button>
           <p class="js-form-status text-sm text-center" role="status" aria-live="polite"></p>
         </form>
