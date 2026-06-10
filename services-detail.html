@@ -126,7 +126,10 @@
     <!-- ===== HERO ===== -->
     <section class="relative min-h-0 sm:min-h-[480px] flex items-center overflow-hidden bg-white pb-16">
       <div class="absolute inset-0 z-0">
-        <img src="assets/Hero-detalleservicio.svg" alt="" class="w-full h-full object-cover object-right opacity-40 md:opacity-100" />
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/hero-service-detail-mobile.webp" />
+          <img src="assets/hero-service-detail.webp" alt="" class="w-full h-full object-cover object-center" />
+        </picture>
       </div>
       <div class="container-site relative z-10">
         <div class="flex items-center gap-4 mb-4">
@@ -263,8 +266,9 @@
     <!-- ===== CTA FINAL ===== -->
     <section class="relative section text-white overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <img src="assets/construyamos_detalle_servicio.svg" alt="" class="w-full h-full object-cover" />
+        <picture><source media="(max-width: 767px)" srcset="assets/cta-service-mobile.webp" /><img src="assets/cta-service.webp" alt="" class="w-full h-full object-cover" /></picture>
       </div>
+      <div class="absolute inset-0 z-0 bg-black/45"></div>
       <div class="container-site relative z-10 text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Construyamos la aplicación que lleve tu proyecto al siguiente nivel</h2>
         <p class="text-gray-200 mb-8 max-w-xl mx-auto">Hablemos sobre tus necesidades y diseñemos juntos la solución ideal con Power Apps.</p>

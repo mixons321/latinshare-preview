@@ -97,7 +97,10 @@
     <!-- ===== HERO ===== -->
     <section class="relative min-h-0 sm:min-h-[520px] flex items-center overflow-hidden bg-white pt-28 sm:pt-40 pb-16">
       <div class="absolute inset-0 z-0">
-        <img src="assets/Hero_herramientas.svg" alt="" class="w-full h-full object-cover object-right opacity-40 md:opacity-100" />
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/hero-tools-mobile.webp" />
+          <img src="assets/hero-tools.webp" alt="" class="w-full h-full object-cover object-center" />
+        </picture>
       </div>
       <div class="container-site relative z-10">
         <nav aria-label="Breadcrumb" class="mb-4">
@@ -312,8 +315,10 @@
     </section>
 
     <!-- ===== CTA FINAL ===== -->
-    <section class="section" style="background:linear-gradient(135deg,#00AEEF 0%,#4f2d7f 100%)">
-      <div class="container-site text-center">
+    <section class="relative section overflow-hidden">
+      <div class="absolute inset-0 z-0"><picture><source media="(max-width: 767px)" srcset="assets/cta-tools-mobile.webp" /><img src="assets/cta-tools.webp" alt="" class="w-full h-full object-cover" /></picture></div>
+      <div class="absolute inset-0 z-0 bg-black/55"></div>
+      <div class="container-site relative z-10 text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Sacá el máximo potencial de tus herramientas Microsoft.</h2>
         <p class="text-blue-100 mb-8 max-w-xl mx-auto">Nuestro equipo de especialistas certificados está listo para ayudarte a integrar, escalar y optimizar tu ecosistema tecnológico.</p>
         <a href="contact.html" class="btn-orange text-base">Consultar por integraciones</a>

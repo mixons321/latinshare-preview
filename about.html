@@ -109,7 +109,10 @@
     <!-- ===== HERO ===== -->
     <section class="relative min-h-0 sm:min-h-[520px] flex items-center overflow-hidden bg-white pt-28 sm:pt-40 pb-16">
       <div class="absolute inset-0 z-0">
-        <img src="assets/hero_quienes_somos.svg" alt="" class="w-full h-full object-cover object-right opacity-40 md:opacity-100" />
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/hero-about-mobile.webp" />
+          <img src="assets/hero-about.webp" alt="" class="w-full h-full object-cover object-center" />
+        </picture>
       </div>
       <div class="container-site relative z-10">
         <nav aria-label="Breadcrumb" class="mb-4">
@@ -185,21 +188,21 @@
 
           <!-- Miguel Diomedi — no matching avatar -->
           <a href="https://linkedin.com/in/miguel-diomedi" target="_blank" rel="noopener" class="text-center group">
-            <img src="assets/logos/generic.svg" alt="Miguel Diomedi" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
+            <img src="assets/team-miguel.webp" alt="Miguel Diomedi" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
             <h3 class="font-bold text-[#171717]">Miguel Diomedi</h3>
             <p class="text-sm text-gray-500">CEO</p>
           </a>
 
           <!-- Rodrigo Orozco — no matching avatar -->
           <a href="https://linkedin.com/in/rodrigo-orozco" target="_blank" rel="noopener" class="text-center group">
-            <img src="assets/logos/generic.svg" alt="Rodrigo Orozco Candia" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
+            <img src="assets/team-rodrigo.webp" alt="Rodrigo Orozco Candia" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
             <h3 class="font-bold text-[#171717]">Rodrigo Orozco Candia</h3>
             <p class="text-sm text-gray-500">Gerente General Chile y Argentina</p>
           </a>
 
           <!-- Thamara García — no matching avatar (avatar file: thannia.svg doesn't match "Thamara") -->
           <a href="https://linkedin.com/in/thamara-garcia" target="_blank" rel="noopener" class="text-center group">
-            <img src="assets/logos/generic.svg" alt="Thamara García Dué Tovar" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
+            <img src="assets/team-thamara.webp" alt="Thamara García Dué Tovar" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
             <h3 class="font-bold text-[#171717]">Thamara García Dué Tovar</h3>
             <p class="text-sm text-gray-500">Presidenta México y Centroamérica</p>
           </a>
@@ -289,8 +292,9 @@
     <!-- ===== CTA "TRABAJEMOS JUNTOS" ===== -->
     <section class="relative section text-white overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <img src="assets/trabajemosjuntos_quienessomos.svg" alt="" class="w-full h-full object-cover" />
+        <picture><source media="(max-width: 767px)" srcset="assets/cta-about-mobile.webp" /><img src="assets/cta-about.webp" alt="" class="w-full h-full object-cover" /></picture>
       </div>
+      <div class="absolute inset-0 z-0 bg-black/40"></div>
       <div class="container-site relative z-10 text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-8">Trabajemos juntos en el futuro digital de tu empresa.</h2>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">

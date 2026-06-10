@@ -111,7 +111,10 @@
     <!-- ===== HERO ===== -->
     <section class="relative min-h-0 sm:min-h-[520px] flex items-center overflow-hidden bg-white pt-28 sm:pt-40 pb-16">
       <div class="absolute inset-0 z-0">
-        <img src="assets/Hero_licencias.svg" alt="" class="w-full h-full object-cover object-right opacity-40 md:opacity-100" />
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/hero-licenses-mobile.webp" />
+          <img src="assets/hero-licenses.webp" alt="" class="w-full h-full object-cover object-center" />
+        </picture>
       </div>
       <div class="container-site relative z-10">
         <nav aria-label="Breadcrumb" class="mb-4">

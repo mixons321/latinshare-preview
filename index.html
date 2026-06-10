@@ -98,7 +98,10 @@
     <!-- ===== HERO ===== -->
     <section class="relative w-full min-h-[600px] lg:min-h-[750px] flex items-start justify-center overflow-hidden bg-white pt-32 sm:pt-44 lg:pt-60 pb-20">
       <div class="absolute inset-0 z-0">
-        <img src="assets/hero_home.svg" alt="" class="w-full h-full object-cover object-top opacity-40 md:opacity-100" />
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/hero-home-mobile.webp" />
+          <img src="assets/hero-home.webp" alt="" class="w-full h-full object-cover object-center" />
+        </picture>
       </div>
       <div class="container-site relative z-10 flex flex-col items-center">
         <div class="max-w-5xl w-full text-center">
@@ -442,7 +445,8 @@
 
     <!-- ===== CTA FINAL ===== -->
     <section class="relative section text-white overflow-hidden">
-      <div class="absolute inset-0 z-0"><img src="assets/soluciones_bg.svg" alt="" class="w-full h-full object-cover" /></div>
+      <div class="absolute inset-0 z-0"><picture><source media="(max-width: 767px)" srcset="assets/cta-home-mobile.webp" /><img src="assets/cta-home.webp" alt="" class="w-full h-full object-cover" /></picture></div>
+      <div class="absolute inset-0 z-0 bg-black/40"></div>
       <div class="container-site relative z-10 text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-6">Acelera la transformación digital de tu organización</h2>
         <a href="contact.html" class="btn-orange text-base">Agendar diagnóstico gratuito</a>
