@@ -118,101 +118,153 @@
       </div>
     </section>
 
-    <!-- ===== BANDA PARTNER ===== -->
+    <!-- ===== BANDA PARTNER / CERTIFICACIONES ===== -->
     <div class="w-full bg-white leading-none relative z-10 -mt-12">
-      <img src="assets/Partner.svg" alt="Microsoft Solutions Partner" class="w-full h-auto block" />
+      <!-- Desktop: SVG Partner band -->
+      <img src="assets/Partner.svg" alt="Microsoft Solutions Partner" class="w-full h-auto block hidden md:block" />
+      <!-- Mobile: certificaciones-mobile.webp -->
+      <img src="assets/certificaciones-mobile.webp" alt="Microsoft Solutions Partner — certificaciones" class="w-full h-auto block md:hidden" />
     </div>
 
     <!-- ===== SOLUCIONES DE TRANSFORMACIÓN DIGITAL ===== -->
-    <section class="section bg-white">
+    <section class="section" style="background:linear-gradient(180deg,#f5fbff,#ffffff)">
       <div class="container-site">
         <header class="text-center mb-12">
-          <p class="section-label mb-2">Soluciones</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Soluciones de transformación digital para empresas</h2>
+          <h2 class="section-h2">Soluciones de transformación digital para tu empresa</h2>
+          <p class="section-subtitle mx-auto mt-4">Servicios especializados que convierten desafíos tecnológicos en oportunidades de crecimiento.</p>
         </header>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
           <!-- Tarjeta 1: Modern work con Microsoft 365 -->
-          <article class="card">
-            <img src="assets/Solutioncards_servicios/microsoft365.svg" alt="Modern work con Microsoft 365" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Modern work con Microsoft 365</h3>
-            <p class="text-sm text-gray-600 flex-1">Habilita un espacio de trabajo colaborativo y productivo para toda tu organización.</p>
-            <a href="services.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+          <article class="card is-media">
+            <img src="assets/solution-card-01-modern-work.webp" alt="Modern work con Microsoft 365" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Modern work con Microsoft 365</h3>
+              <p class="text-sm text-gray-600">Habilita un espacio de trabajo colaborativo y productivo para toda tu organización.</p>
+            </div>
           </article>
+
           <!-- Tarjeta 2: Automatización con Power Platform -->
-          <article class="card">
-            <img src="assets/Solutioncards_servicios/powerplataform.svg" alt="Automatización con Power Platform" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Automatización con Power Platform</h3>
-            <p class="text-sm text-gray-600 flex-1">Automatiza procesos y optimiza flujos de trabajo con low-code.</p>
-            <a href="services.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+          <article class="card is-media">
+            <img src="assets/solution-card-02-power-platform.webp" alt="Automatización con Power Platform" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Automatización con Power Platform</h3>
+              <p class="text-sm text-gray-600">Automatiza procesos y optimiza flujos de trabajo con low-code.</p>
+            </div>
           </article>
+
           <!-- Tarjeta 3: Datos y optimización en la nube -->
-          <article class="card">
-            <img src="assets/Solutioncards_servicios/azure.svg" alt="Datos y optimización en la nube" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Datos y optimización en la nube</h3>
-            <p class="text-sm text-gray-600 flex-1">Aprovecha Azure para analítica avanzada y gestión eficiente de datos.</p>
-            <a href="services.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+          <article class="card is-media">
+            <img src="assets/solution-card-03-data-cloud.webp" alt="Datos y optimización en la nube" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Datos y optimización en la nube</h3>
+              <p class="text-sm text-gray-600">Aprovecha Azure para analítica avanzada y gestión eficiente de datos.</p>
+            </div>
           </article>
+
           <!-- Tarjeta 4: IA aplicada al entorno empresarial -->
-          <article class="card">
-            <img src="assets/Solutioncards_servicios/copilot.svg" alt="IA aplicada al entorno empresarial" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">IA aplicada al entorno empresarial</h3>
-            <p class="text-sm text-gray-600 flex-1">Potencia tus decisiones con Copilot y soluciones de inteligencia artificial.</p>
-            <a href="services.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+          <article class="card is-media">
+            <img src="assets/solution-card-04-ai-business.webp" alt="IA aplicada al entorno empresarial" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">IA aplicada al entorno empresarial</h3>
+              <p class="text-sm text-gray-600">Potencia tus decisiones con Copilot y soluciones de inteligencia artificial.</p>
+            </div>
           </article>
+
+        </div>
+        <!-- CTA inferior de sección -->
+        <div class="text-center btn-below-grid">
+          <a href="services.html" class="btn-primary">Conocé nuestros servicios</a>
         </div>
       </div>
     </section>
 
     <!-- ===== TECNOLOGÍAS QUE IMPULSAN RESULTADOS ===== -->
-    <section class="section bg-gray-50">
-      <div class="container-site">
+    <section class="section relative overflow-hidden">
+      <!-- Fondo por resolución -->
+      <div class="absolute inset-0 z-0">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/tecnologias-home-mobile.webp" />
+          <img src="assets/tecnologias-home.webp" alt="" class="w-full h-full object-cover object-center" />
+        </picture>
+      </div>
+      <div class="container-site relative z-10">
         <header class="text-center mb-12">
-          <p class="section-label mb-2">Tecnologías</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Tecnologías que impulsan resultados</h2>
+          <h2 class="section-h2">Tecnologías que impulsan resultados</h2>
+          <p class="section-subtitle mx-auto mt-4">Herramientas enfocadas en productividad, apps low-code, datos/AI, nube y seguridad.</p>
         </header>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
           <!-- 1: Productividad moderna en toda la organización -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="Productividad moderna en toda la organización" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Productividad moderna en toda la organización</h3>
-            <p class="text-sm text-gray-600 flex-1">Empodera a tus equipos con Microsoft 365 para colaborar desde cualquier lugar.</p>
-            <a href="tools.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+          <article class="card is-media">
+            <img src="assets/technology-card-01-microsoft-365.webp" alt="Productividad moderna en toda la organización" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <span class="inline-block text-xs px-2 py-0.5 rounded-full bg-blue-100 text-[#00AEEF] mb-2">Microsoft 365</span>
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Productividad moderna en toda la organización</h3>
+              <p class="text-sm text-gray-600 mb-3">Empodera a tus equipos con Microsoft 365 para colaborar desde cualquier lugar.</p>
+              <a href="tools.html" class="text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+            </div>
           </article>
+
           <!-- 2: IA que impulsa el trabajo diario -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="IA que impulsa el trabajo diario" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">IA que impulsa el trabajo diario</h3>
-            <p class="text-sm text-gray-600 flex-1">Integra Copilot para automatizar tareas repetitivas y aumentar la eficiencia.</p>
-            <a href="tools.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+          <article class="card is-media">
+            <img src="assets/technology-card-02-copilot.webp" alt="IA que impulsa el trabajo diario" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <span class="inline-block text-xs px-2 py-0.5 rounded-full bg-orange-100 text-[#F26522] mb-2">Copilot</span>
+              <h3 class="font-bold text-lg text-[#171717] mb-2">IA que impulsa el trabajo diario</h3>
+              <p class="text-sm text-gray-600 mb-3">Integra Copilot para automatizar tareas repetitivas y aumentar la eficiencia.</p>
+              <a href="tools.html" class="text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+            </div>
           </article>
-          <!-- 3: De procesos manuales a flujos en la nube -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="De procesos manuales a flujos en la nube" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">De procesos manuales a flujos en la nube</h3>
-            <p class="text-sm text-gray-600 flex-1">Transforma operaciones con Power Automate y Azure Logic Apps.</p>
-            <a href="tools.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+
+          <!-- 3: De procesos manuales a apps en semanas -->
+          <article class="card is-media">
+            <img src="assets/technology-card-03-power-platform.webp" alt="De procesos manuales a apps en semanas" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <span class="inline-block text-xs px-2 py-0.5 rounded-full bg-blue-100 text-[#00AEEF] mb-2">Power Platform</span>
+              <h3 class="font-bold text-lg text-[#171717] mb-2">De procesos manuales a apps en semanas</h3>
+              <p class="text-sm text-gray-600 mb-3">Transforma operaciones con Power Automate y Power Apps en tiempo récord.</p>
+              <a href="tools.html" class="text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+            </div>
           </article>
-          <!-- 4: Decisiones con datos en tiempo real -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="Decisiones con datos en tiempo real" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Decisiones con datos en tiempo real</h3>
-            <p class="text-sm text-gray-600 flex-1">Visualiza métricas clave con Power BI y Azure Synapse Analytics.</p>
-            <a href="tools.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+
+          <!-- 4: Decisiones con datos confiables -->
+          <article class="card is-media">
+            <img src="assets/technology-card-04-data-ai.webp" alt="Decisiones con datos confiables" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <span class="inline-block text-xs px-2 py-0.5 rounded-full bg-blue-100 text-[#00AEEF] mb-2">Data &amp; AI</span>
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Decisiones con datos confiables</h3>
+              <p class="text-sm text-gray-600 mb-3">Visualiza métricas clave con Power BI y Azure Synapse Analytics.</p>
+              <a href="tools.html" class="text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+            </div>
           </article>
-          <!-- 5: Tareas lista durante la noche -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="Tareas lista durante la noche" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Tareas lista durante la noche</h3>
-            <p class="text-sm text-gray-600 flex-1">Automatiza reportes y procesos batch con Power Platform y Azure Functions.</p>
-            <a href="tools.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+
+          <!-- 5: Nube lista para crecer -->
+          <article class="card is-media">
+            <img src="assets/technology-card-05-azure-cloud.webp" alt="Nube lista para crecer" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <span class="inline-block text-xs px-2 py-0.5 rounded-full bg-blue-100 text-[#00AEEF] mb-2">Azure Cloud</span>
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Nube lista para crecer</h3>
+              <p class="text-sm text-gray-600 mb-3">Automatiza reportes y procesos batch con Azure Functions y la nube escalable.</p>
+              <a href="tools.html" class="text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+            </div>
           </article>
-          <!-- 6: Seguridad que habilita el negocio -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="Seguridad que habilita el negocio" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Seguridad que habilita el negocio</h3>
-            <p class="text-sm text-gray-600 flex-1">Protege tus activos con Microsoft 365 Defender y Azure Security Center.</p>
-            <a href="tools.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+
+          <!-- 6: Seguridad que habilita el trabajo -->
+          <article class="card is-media">
+            <img src="assets/technology-card-06-security.webp" alt="Seguridad que habilita el trabajo" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <span class="inline-block text-xs px-2 py-0.5 rounded-full bg-orange-100 text-[#F26522] mb-2">Seguridad</span>
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Seguridad que habilita el trabajo</h3>
+              <p class="text-sm text-gray-600 mb-3">Protege tus activos con Microsoft 365 Defender y Azure Security Center.</p>
+              <a href="tools.html" class="text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+            </div>
           </article>
+
+        </div>
+        <!-- CTA inferior de sección -->
+        <div class="text-center btn-below-grid">
+          <a href="tools.html" class="btn-primary">Ver todas las herramientas</a>
         </div>
       </div>
     </section>
@@ -221,31 +273,37 @@
     <section class="section bg-white">
       <div class="container-site">
         <header class="text-center mb-12">
-          <p class="section-label mb-2">Licencias</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Licencias Microsoft</h2>
+          <h2 class="section-h2">Licencias Microsoft</h2>
+          <p class="section-subtitle mx-auto mt-4">Optimiza tu inversión tecnológica con soluciones de licenciamiento estratégicas.</p>
         </header>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- 1: Licencias Microsoft 365 -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="Licencias Microsoft 365" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Licencias Microsoft 365</h3>
-            <p class="text-sm text-gray-600 flex-1">Planes Business y Enterprise para maximizar la productividad de tu equipo.</p>
-            <a href="licenses.html" class="mt-4 btn-orange text-sm self-start">Solicita una Cotización</a>
-          </article>
-          <!-- 2: Licencias Educacionales -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="Licencias Educacionales" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Licencias Educacionales</h3>
-            <p class="text-sm text-gray-600 flex-1">Soluciones especiales para instituciones académicas y estudiantes.</p>
-            <a href="licenses.html" class="mt-4 btn-orange text-sm self-start">Solicita una Cotización</a>
-          </article>
-          <!-- 3: Azure -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="Azure" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Azure</h3>
-            <p class="text-sm text-gray-600 flex-1">Infraestructura en la nube escalable y segura para tu organización.</p>
-            <a href="licenses.html" class="mt-4 btn-orange text-sm self-start">Solicita una Cotización</a>
-          </article>
+        <!-- Tres bloques abiertos (sin bordes de card) -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+
+          <!-- Bloque 1: Licencias Microsoft 365 -->
+          <div class="flex flex-col items-center text-center">
+            <img src="assets/license-card-01-microsoft-365.webp" alt="Licencias Microsoft 365" class="w-full max-w-xs rounded-2xl mb-5 object-cover" />
+            <h3 class="font-bold text-xl text-[#171717] mb-2">Licencias Microsoft 365</h3>
+            <p class="text-sm text-gray-600">Planes Business y Enterprise para maximizar la productividad de tu equipo.</p>
+          </div>
+
+          <!-- Bloque 2: Licencias Educacionales -->
+          <div class="flex flex-col items-center text-center">
+            <img src="assets/license-card-02-education.webp" alt="Licencias Educacionales" class="w-full max-w-xs rounded-2xl mb-5 object-cover" />
+            <h3 class="font-bold text-xl text-[#171717] mb-2">Licencias Educacionales</h3>
+            <p class="text-sm text-gray-600">Soluciones especiales para instituciones académicas y estudiantes.</p>
+          </div>
+
+          <!-- Bloque 3: Azure -->
+          <div class="flex flex-col items-center text-center">
+            <img src="assets/license-card-03-azure.webp" alt="Azure" class="w-full max-w-xs rounded-2xl mb-5 object-cover" />
+            <h3 class="font-bold text-xl text-[#171717] mb-2">Azure</h3>
+            <p class="text-sm text-gray-600">Infraestructura en la nube escalable y segura para tu organización.</p>
+          </div>
+
+        </div>
+        <!-- CTA único centrado -->
+        <div class="text-center btn-below-grid">
+          <a href="licenses.html" class="btn-orange">Cotizá tus licencias Microsoft</a>
         </div>
       </div>
     </section>
@@ -253,70 +311,83 @@
     <!-- ===== RESULTADOS MEDIBLES / CASOS DE ÉXITO ===== -->
     <section class="section bg-gray-50">
       <div class="container-site">
-        <header class="text-center mb-12">
-          <p class="section-label mb-2">Clientes</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Resultados medibles de nuestros clientes</h2>
-        </header>
-        <div class="max-w-3xl mx-auto divide-y divide-gray-200">
+        <!-- Layout: 2 columnas en desktop, 1 en mobile -->
+        <div class="flex flex-col md:flex-row md:gap-10 md:items-start">
 
-          <!-- Sura -->
-          <div class="py-4">
-            <button type="button" data-accordion-trigger aria-expanded="true" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
-              <span class="flex items-center gap-4">
-                <img src="assets/logos/generic.svg" alt="Sura" class="h-8 w-16 object-contain" />
-                <span>Sura</span>
-              </span>
-              <svg data-accordion-icon class="w-5 h-5 transition-transform rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="pt-3 text-sm text-gray-600">La intranet de Sura fue creada sobre SharePoint Online con componentes desarrollados y personalizados permitiendo extender las funcionalidades nativas y componentes para la gestión de información y documentos.</div>
+          <!-- Columna izquierda: encabezado + acordeón (~55%) -->
+          <div class="md:w-[55%]">
+            <header class="mb-8">
+              <p class="section-label mb-2">Casos de éxito</p>
+              <h2 class="section-h2">Resultados medibles de nuestros clientes</h2>
+            </header>
+            <div class="divide-y divide-gray-200">
+
+              <!-- Sura (abierto por defecto) -->
+              <div class="py-4">
+                <button type="button" data-accordion-trigger aria-expanded="true" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
+                  <span class="flex items-center gap-4">
+                    <img src="assets/logos/generic.svg" alt="Sura" class="h-8 w-16 object-contain" />
+                    <span>Sura</span>
+                  </span>
+                  <svg data-accordion-icon class="w-5 h-5 transition-transform rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="pt-3 text-sm text-gray-600">La intranet de Sura fue creada sobre SharePoint Online con componentes desarrollados y personalizados permitiendo extender las funcionalidades nativas y componentes para la gestión de información y documentos.</div>
+              </div>
+
+              <!-- Instore -->
+              <div class="py-4">
+                <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
+                  <span class="flex items-center gap-4">
+                    <img src="assets/logos/generic.svg" alt="Instore" class="h-8 w-16 object-contain" />
+                    <span>Instore</span>
+                  </span>
+                  <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="hidden pt-3 text-sm text-gray-600">Implementación de Power Platform para automatizar flujos de trabajo y optimizar la gestión de operaciones en tiendas retail a lo largo de Latinoamérica.</div>
+              </div>
+
+              <!-- Davila -->
+              <div class="py-4">
+                <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
+                  <span class="flex items-center gap-4">
+                    <img src="assets/logos/generic.svg" alt="Davila" class="h-8 w-16 object-contain" />
+                    <span>Davila</span>
+                  </span>
+                  <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="hidden pt-3 text-sm text-gray-600">Solución de Microsoft 365 y Teams para mejorar la comunicación interna y la colaboración entre equipos distribuidos, aumentando la productividad organizacional.</div>
+              </div>
+
+              <!-- Provider -->
+              <div class="py-4">
+                <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
+                  <span class="flex items-center gap-4">
+                    <img src="assets/logos/generic.svg" alt="Provider" class="h-8 w-16 object-contain" />
+                    <span>Provider</span>
+                  </span>
+                  <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="hidden pt-3 text-sm text-gray-600">Migración a Azure y modernización de infraestructura, logrando mayor disponibilidad y reducción de costos operativos con soluciones cloud escalables.</div>
+              </div>
+
+              <!-- Esabio -->
+              <div class="py-4">
+                <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
+                  <span class="flex items-center gap-4">
+                    <img src="assets/logos/generic.svg" alt="Esabio" class="h-8 w-16 object-contain" />
+                    <span>Esabio</span>
+                  </span>
+                  <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="hidden pt-3 text-sm text-gray-600">Implementación de Power BI y Copilot para analítica avanzada y toma de decisiones basada en datos en tiempo real para la gestión de servicios sanitarios.</div>
+              </div>
+
+            </div>
           </div>
 
-          <!-- Instore -->
-          <div class="py-4">
-            <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
-              <span class="flex items-center gap-4">
-                <img src="assets/logos/generic.svg" alt="Instore" class="h-8 w-16 object-contain" />
-                <span>Instore</span>
-              </span>
-              <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="hidden pt-3 text-sm text-gray-600">Implementación de Power Platform para automatizar flujos de trabajo y optimizar la gestión de operaciones en tiendas retail a lo largo de Latinoamérica.</div>
-          </div>
-
-          <!-- Davila -->
-          <div class="py-4">
-            <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
-              <span class="flex items-center gap-4">
-                <img src="assets/logos/generic.svg" alt="Davila" class="h-8 w-16 object-contain" />
-                <span>Davila</span>
-              </span>
-              <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="hidden pt-3 text-sm text-gray-600">Solución de Microsoft 365 y Teams para mejorar la comunicación interna y la colaboración entre equipos distribuidos, aumentando la productividad organizacional.</div>
-          </div>
-
-          <!-- Provider -->
-          <div class="py-4">
-            <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
-              <span class="flex items-center gap-4">
-                <img src="assets/logos/generic.svg" alt="Provider" class="h-8 w-16 object-contain" />
-                <span>Provider</span>
-              </span>
-              <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="hidden pt-3 text-sm text-gray-600">Migración a Azure y modernización de infraestructura, logrando mayor disponibilidad y reducción de costos operativos con soluciones cloud escalables.</div>
-          </div>
-
-          <!-- Essbio -->
-          <div class="py-4">
-            <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
-              <span class="flex items-center gap-4">
-                <img src="assets/logos/generic.svg" alt="Essbio" class="h-8 w-16 object-contain" />
-                <span>Essbio</span>
-              </span>
-              <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="hidden pt-3 text-sm text-gray-600">Implementación de Power BI y Copilot para analítica avanzada y toma de decisiones basada en datos en tiempo real para la gestión de servicios sanitarios.</div>
+          <!-- Columna derecha: imagen mockup (~45%) -->
+          <div class="md:w-[45%] mt-8 md:mt-0 flex items-start justify-center">
+            <img src="assets/case-study-sura.webp" alt="Caso de éxito Sura" class="w-full rounded-2xl object-cover" />
           </div>
 
         </div>
@@ -430,16 +501,32 @@
     </section>
 
     <!-- ===== NEWSLETTER ===== -->
-    <section class="section-compact bg-[#0d1115] text-white">
-      <div class="container-site flex flex-col md:flex-row items-center justify-between gap-6">
-        <div>
-          <h2 class="text-2xl font-bold mb-2">Suscríbete a nuestro newsletter</h2>
-          <p class="text-gray-300 text-sm">Te mantendremos actualizado con ofertas, noticias y próximos eventos.</p>
+    <section class="section-compact relative overflow-hidden text-white">
+      <!-- Fondo por resolución -->
+      <div class="absolute inset-0 z-0">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/newsletter-home-mobile.webp" />
+          <img src="assets/newsletter-home.webp" alt="" class="w-full h-full object-cover object-center" />
+        </picture>
+      </div>
+      <div class="absolute inset-0 z-0 bg-black/50"></div>
+      <div class="container-site relative z-10">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+
+          <!-- Bloque izquierdo: ícono + texto -->
+          <div class="flex flex-col items-center md:items-start text-center md:text-left">
+            <img src="assets/newsletter-icon.webp" alt="" style="width:67px;height:47px" class="mb-4 object-contain" />
+            <h2 class="text-2xl font-bold mb-2">Suscríbete a nuestro newsletter</h2>
+            <p class="text-gray-200 text-sm max-w-sm">Te mantendremos actualizado con ofertas, noticias y próximos eventos.</p>
+          </div>
+
+          <!-- Bloque derecho: formulario -->
+          <form class="js-newsletter flex flex-col sm:flex-row w-full md:w-auto gap-2" action="https://formspree.io/f/REEMPLAZAR" method="POST">
+            <input type="email" name="email" required placeholder="tucorreo@empresa.com" class="w-full sm:flex-1 min-w-0 md:w-72 px-4 py-3 rounded-full text-gray-900" />
+            <button type="submit" class="btn-orange w-full sm:w-auto">Suscribirme</button>
+          </form>
+
         </div>
-        <form class="js-newsletter flex flex-col sm:flex-row w-full md:w-auto gap-2" action="https://formspree.io/f/REEMPLAZAR" method="POST">
-          <input type="email" name="email" required placeholder="tucorreo@empresa.com" class="w-full sm:flex-1 min-w-0 md:w-72 px-4 py-3 rounded-full text-gray-900" />
-          <button type="submit" class="btn-orange w-full sm:w-auto">Suscribirme</button>
-        </form>
       </div>
     </section>
 

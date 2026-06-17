@@ -203,79 +203,102 @@
     </section>
 
     <!-- ===== PLANES Y PRODUCTOS DESTACADOS (4 pricing plans) ===== -->
-    <section class="section bg-gray-50">
-      <div class="container-site">
+    <section class="section relative overflow-hidden">
+      <!-- Full-bleed background image -->
+      <div class="absolute inset-0 z-0">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/licenses-plans-bg-mobile.webp" />
+          <img src="assets/licenses-plans-bg.webp" alt="" class="w-full h-full object-cover object-center" />
+        </picture>
+      </div>
+      <div class="container-site relative z-10">
         <header class="text-center mb-12">
           <p class="section-label mb-2">Planes</p>
           <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Planes y productos destacados</h2>
           <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Elige el plan Microsoft 365 que mejor se adapta a las necesidades de tu equipo. Todos los planes incluyen asesoría personalizada de LatinShare.</p>
         </header>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-start">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
 
           <!-- Plan 1: Microsoft 365 Basic -->
-          <article class="rounded-2xl border-2 border-gray-200 p-6 flex flex-col bg-white">
-            <p class="text-xs text-gray-500 mb-1">Microsoft 365</p>
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Microsoft 365 Basic</h3>
-            <p class="text-sm text-gray-500 mb-4">Ideal para pequeñas empresas que inician su transformación digital.</p>
-            <p class="mb-1"><span class="text-3xl font-bold text-[#171717]">$5.50</span> <span class="text-sm text-gray-500">usuario/mes</span></p>
-            <a href="#cotizar" class="btn-primary w-full my-4 text-center">Comenzar plan</a>
-            <ul class="space-y-2 text-sm text-gray-600">
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Correo empresarial con 50GB</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Teams para chat y videollamadas</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Almacenamiento OneDrive 1TB</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Aplicaciones web (Word, Excel, PowerPoint)</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Seguridad básica y cumplimiento</li>
-            </ul>
+          <article class="rounded-2xl border-2 border-gray-200 p-6 flex flex-col justify-between bg-white h-full">
+            <div>
+              <p class="text-xs text-gray-500 mb-1">Microsoft 365</p>
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Microsoft 365 Basic</h3>
+              <p class="text-sm text-gray-500 mb-4">Ideal para pequeñas empresas que inician su transformación digital.</p>
+              <p class="mb-1"><span class="text-3xl font-bold text-[#171717]">$5.50</span> <span class="text-sm text-gray-500">usuario/mes</span></p>
+            </div>
+            <div>
+              <a href="#cotizar" class="btn-primary w-full my-4 text-center">Comenzar plan</a>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Correo empresarial con 50GB</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Teams para chat y videollamadas</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Almacenamiento OneDrive 1TB</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Aplicaciones web (Word, Excel, PowerPoint)</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Seguridad básica y cumplimiento</li>
+              </ul>
+            </div>
           </article>
 
           <!-- Plan 2: Microsoft 365 Business Standard -->
-          <article class="rounded-2xl border-2 border-gray-200 p-6 flex flex-col bg-white">
-            <p class="text-xs text-gray-500 mb-1">Microsoft 365</p>
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Microsoft 365 Business Standard</h3>
-            <p class="text-sm text-gray-500 mb-4">Todo lo que necesitas para equipos productivos y colaborativos.</p>
-            <p class="mb-1"><span class="text-3xl font-bold text-[#171717]">$11.60</span> <span class="text-sm text-gray-500">usuario/mes</span></p>
-            <a href="#cotizar" class="btn-primary w-full my-4 text-center">Comenzar plan</a>
-            <ul class="space-y-2 text-sm text-gray-600">
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Todo lo incluido en Basic</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Aplicaciones de escritorio instalables</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> SharePoint y OneDrive avanzado</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Gestión de dispositivos móviles</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Asistencia técnica por web</li>
-            </ul>
+          <article class="rounded-2xl border-2 border-gray-200 p-6 flex flex-col justify-between bg-white h-full">
+            <div>
+              <p class="text-xs text-gray-500 mb-1">Microsoft 365</p>
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Microsoft 365 Business Standard</h3>
+              <p class="text-sm text-gray-500 mb-4">Todo lo que necesitas para equipos productivos y colaborativos.</p>
+              <p class="mb-1"><span class="text-3xl font-bold text-[#171717]">$11.60</span> <span class="text-sm text-gray-500">usuario/mes</span></p>
+            </div>
+            <div>
+              <a href="#cotizar" class="btn-primary w-full my-4 text-center">Comenzar plan</a>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Todo lo incluido en Basic</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Aplicaciones de escritorio instalables</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> SharePoint y OneDrive avanzado</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Gestión de dispositivos móviles</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Asistencia técnica por web</li>
+              </ul>
+            </div>
           </article>
 
           <!-- Plan 3: Microsoft 365 Business Premium (highlighted) -->
-          <article class="rounded-2xl border-2 border-[#F26522] p-6 flex flex-col bg-white relative">
+          <article class="rounded-2xl border-2 border-[#F26522] p-6 flex flex-col justify-between bg-white h-full relative">
             <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#F26522] text-white text-xs font-bold px-4 py-1 rounded-full">Recomendado</span>
-            <p class="text-xs text-gray-500 mb-1 mt-2">Microsoft 365</p>
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Microsoft 365 Business Premium</h3>
-            <p class="text-sm text-gray-500 mb-4">Seguridad avanzada para proteger tu negocio de amenazas cibernéticas.</p>
-            <p class="mb-1"><span class="text-3xl font-bold text-[#171717]">$20.50</span> <span class="text-sm text-gray-500">usuario/mes</span></p>
-            <a href="#cotizar" class="btn-orange w-full my-4 text-center">Comenzar plan</a>
-            <ul class="space-y-2 text-sm text-gray-600">
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Todo lo incluido en Business Standard</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Microsoft Defender para Office 365</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Gestión de identidad y acceso avanzada</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Protección de información sensible</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Cumplimiento y gobierno de datos</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Acceso condicional y MFA</li>
-            </ul>
+            <div>
+              <p class="text-xs text-gray-500 mb-1 mt-2">Microsoft 365</p>
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Microsoft 365 Business Premium</h3>
+              <p class="text-sm text-gray-500 mb-4">Seguridad avanzada para proteger tu negocio de amenazas cibernéticas.</p>
+              <p class="mb-1"><span class="text-3xl font-bold text-[#171717]">$20.50</span> <span class="text-sm text-gray-500">usuario/mes</span></p>
+            </div>
+            <div>
+              <a href="#cotizar" class="btn-orange w-full my-4 text-center">Comenzar plan</a>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Todo lo incluido en Business Standard</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Microsoft Defender para Office 365</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Gestión de identidad y acceso avanzada</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Protección de información sensible</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Cumplimiento y gobierno de datos</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Acceso condicional y MFA</li>
+              </ul>
+            </div>
           </article>
 
           <!-- Plan 4: Aplicaciones Microsoft 365 Empresas Estándar -->
-          <article class="rounded-2xl border-2 border-gray-200 p-6 flex flex-col bg-white">
-            <p class="text-xs text-gray-500 mb-1">Microsoft 365</p>
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Aplicaciones Microsoft 365 Empresas Estándar</h3>
-            <p class="text-sm text-gray-500 mb-4">Solo las aplicaciones de Office sin servicios de nube adicionales.</p>
-            <p class="mb-1"><span class="text-3xl font-bold text-[#171717]">$7.70</span> <span class="text-sm text-gray-500">usuario/mes</span></p>
-            <a href="#cotizar" class="btn-primary w-full my-4 text-center">Comenzar plan</a>
-            <ul class="space-y-2 text-sm text-gray-600">
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Word, Excel, PowerPoint, Outlook</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Publisher y Access (solo PC)</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Instalación en hasta 5 dispositivos</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Actualizaciones automáticas</li>
-              <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Soporte técnico incluido</li>
-            </ul>
+          <article class="rounded-2xl border-2 border-gray-200 p-6 flex flex-col justify-between bg-white h-full">
+            <div>
+              <p class="text-xs text-gray-500 mb-1">Microsoft 365</p>
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Aplicaciones Microsoft 365 Empresas Estándar</h3>
+              <p class="text-sm text-gray-500 mb-4">Solo las aplicaciones de Office sin servicios de nube adicionales.</p>
+              <p class="mb-1"><span class="text-3xl font-bold text-[#171717]">$7.70</span> <span class="text-sm text-gray-500">usuario/mes</span></p>
+            </div>
+            <div>
+              <a href="#cotizar" class="btn-primary w-full my-4 text-center">Comenzar plan</a>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Word, Excel, PowerPoint, Outlook</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Publisher y Access (solo PC)</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Instalación en hasta 5 dispositivos</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Actualizaciones automáticas</li>
+                <li class="flex items-start gap-2"><span class="text-[#F26522] font-bold flex-shrink-0">&#10003;</span> Soporte técnico incluido</li>
+              </ul>
+            </div>
           </article>
 
         </div>
@@ -361,7 +384,9 @@
             </div>
           </fieldset>
           <textarea class="form-input bg-white" name="mensaje" rows="4" placeholder="Necesidad y comentarios"></textarea>
-          <button type="submit" class="btn-primary w-full">Enviar</button>
+          <div class="flex justify-start">
+            <button type="submit" class="btn-primary">Enviar</button>
+          </div>
           <p class="js-form-status text-sm text-center" role="status" aria-live="polite"></p>
         </form>
       </div>

@@ -96,21 +96,8 @@
 
   <main class="flex-1">
 
-    <!-- ===== BREADCRUMB ===== -->
-    <nav class="pt-32 pb-4 bg-white" aria-label="Breadcrumb">
-      <div class="container-site">
-        <ol class="flex items-center gap-2 text-sm text-gray-500">
-          <li><a href="index.html" class="hover:text-[#F26522]">Inicio</a></li>
-          <li aria-hidden="true">&#8250;</li>
-          <li><a href="tools.html" class="hover:text-[#F26522]">Herramientas</a></li>
-          <li aria-hidden="true">&#8250;</li>
-          <li class="text-[#171717] font-semibold" aria-current="page">Copilot</li>
-        </ol>
-      </div>
-    </nav>
-
-    <!-- ===== HERO ===== -->
-    <section class="relative min-h-0 sm:min-h-[480px] flex items-center overflow-hidden bg-white pb-16">
+    <!-- ===== HERO (breadcrumb integrado) ===== -->
+    <section class="relative min-h-0 sm:min-h-[480px] flex items-center overflow-hidden bg-white pb-16 pt-28 sm:pt-32">
       <div class="absolute inset-0 z-0">
         <picture>
           <source media="(max-width: 767px)" srcset="assets/hero-tool-detail-mobile.webp" />
@@ -118,6 +105,16 @@
         </picture>
       </div>
       <div class="container-site relative z-10">
+        <!-- Breadcrumb integrado sobre el fondo del hero -->
+        <nav aria-label="Breadcrumb" class="mb-6">
+          <ol class="flex items-center gap-2 text-sm text-gray-500">
+            <li><a href="index.html" class="hover:text-[#F26522]">Inicio</a></li>
+            <li aria-hidden="true">&#8250;</li>
+            <li><a href="tools.html" class="hover:text-[#F26522]">Herramientas</a></li>
+            <li aria-hidden="true">&#8250;</li>
+            <li class="text-[#171717] font-semibold" aria-current="page">Copilot</li>
+          </ol>
+        </nav>
         <div class="flex items-center gap-4 mb-4">
           <img src="assets/logo/copilot.svg" alt="Copilot" class="h-16 w-16 object-contain" />
           <p class="section-label">Copilot</p>
@@ -132,7 +129,7 @@
     </section>
 
     <!-- ===== QUÉ HACEMOS CON COPILOT ===== -->
-    <section class="section bg-white">
+    <section class="section" style="background:linear-gradient(180deg,#FFFFFF 0%,#DDE9EE 100%)">
       <div class="container-site">
         <header class="text-center mb-12">
           <p class="section-label mb-2">Lo que hacemos</p>
@@ -142,31 +139,39 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
           <!-- Copilot en Microsoft 365 -->
-          <article class="card">
-            <img src="assets/logo/copilot.svg" alt="Copilot en Microsoft 365" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Copilot en Microsoft 365</h3>
-            <p class="text-sm text-gray-600 flex-1">Integración en Teams, Outlook, Word, Excel y PowerPoint para automatizar tareas cotidianas y generar contenido de calidad.</p>
+          <article class="card is-media">
+            <img src="assets/copilot-card-01-microsoft-365.webp" alt="Copilot en Microsoft 365" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Copilot en Microsoft 365</h3>
+              <p class="text-sm text-gray-600">Integración en Teams, Outlook, Word, Excel y PowerPoint para automatizar tareas cotidianas y generar contenido de calidad.</p>
+            </div>
           </article>
 
           <!-- Copilot Studio -->
-          <article class="card">
-            <img src="assets/logo/copilot_studio.svg" alt="Copilot Studio" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Copilot Studio personalizado</h3>
-            <p class="text-sm text-gray-600 flex-1">Creamos copilots a medida conectados a tus datos y sistemas internos para responder preguntas específicas de tu negocio.</p>
+          <article class="card is-media">
+            <img src="assets/copilot-card-02-copilot-studio.webp" alt="Copilot Studio personalizado" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Copilot Studio personalizado</h3>
+              <p class="text-sm text-gray-600">Creamos copilots a medida conectados a tus datos y sistemas internos para responder preguntas específicas de tu negocio.</p>
+            </div>
           </article>
 
           <!-- Adopción y capacitación -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="Adopción y capacitación" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Adopción y capacitación</h3>
-            <p class="text-sm text-gray-600 flex-1">Programas de entrenamiento para que tus equipos aprovechen al máximo las capacidades de Copilot desde el primer día.</p>
+          <article class="card is-media">
+            <img src="assets/copilot-card-03-adoption-training.webp" alt="Adopción y capacitación" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Adopción y capacitación</h3>
+              <p class="text-sm text-gray-600">Programas de entrenamiento para que tus equipos aprovechen al máximo las capacidades de Copilot desde el primer día.</p>
+            </div>
           </article>
 
           <!-- Gobierno y seguridad -->
-          <article class="card">
-            <img src="assets/logo/entra_id.svg" alt="Gobierno y seguridad" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Gobierno y seguridad</h3>
-            <p class="text-sm text-gray-600 flex-1">Configuramos permisos, políticas de datos y controles de acceso para garantizar un uso seguro y responsable de la IA.</p>
+          <article class="card is-media">
+            <img src="assets/copilot-card-04-governance-security.webp" alt="Gobierno y seguridad" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Gobierno y seguridad</h3>
+              <p class="text-sm text-gray-600">Configuramos permisos, políticas de datos y controles de acceso para garantizar un uso seguro y responsable de la IA.</p>
+            </div>
           </article>
 
         </div>
@@ -184,19 +189,25 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
 
           <div class="text-center">
-            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 text-white text-2xl font-bold mb-4">&#128640;</div>
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 mb-4">
+              <img src="assets/copilot-benefit-icon-01-time-saving.webp" alt="" class="w-8 h-8 object-contain" />
+            </div>
             <h3 class="font-bold text-white text-lg mb-2">Ahorro de tiempo</h3>
             <p class="text-purple-200 text-sm">Reduce hasta un 40% el tiempo dedicado a tareas repetitivas como redactar correos, generar resúmenes de reuniones y crear reportes.</p>
           </div>
 
           <div class="text-center">
-            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 text-white text-2xl font-bold mb-4">&#128200;</div>
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 mb-4">
+              <img src="assets/copilot-benefit-icon-02-faster-decisions.webp" alt="" class="w-8 h-8 object-contain" />
+            </div>
             <h3 class="font-bold text-white text-lg mb-2">Decisiones más rápidas</h3>
             <p class="text-purple-200 text-sm">Accede a información clave de tu empresa en segundos con respuestas generadas desde tus propios documentos, chats y datos.</p>
           </div>
 
           <div class="text-center">
-            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 text-white text-2xl font-bold mb-4">&#128274;</div>
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 mb-4">
+              <img src="assets/copilot-benefit-icon-03-security.webp" alt="" class="w-8 h-8 object-contain" />
+            </div>
             <h3 class="font-bold text-white text-lg mb-2">Seguridad integrada</h3>
             <p class="text-purple-200 text-sm">Copilot respeta los permisos de Microsoft 365 y nunca filtra información a usuarios sin autorización, garantizando privacidad y cumplimiento.</p>
           </div>
@@ -215,32 +226,32 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
 
           <!-- Teams -->
-          <div class="rounded-2xl bg-white border border-gray-100 shadow-sm p-6 flex flex-col items-center text-center">
+          <a href="tools-detail.html" class="card p-6 flex flex-col items-center text-center cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00AEEF]">
             <img src="assets/logo/teams.svg" alt="Teams" class="h-12 w-12 mb-3 object-contain" />
             <h3 class="font-bold text-[#171717] text-sm">Teams</h3>
             <p class="text-xs text-gray-500 mt-1">Reuniones y chats inteligentes</p>
-          </div>
+          </a>
 
           <!-- SharePoint -->
-          <div class="rounded-2xl bg-white border border-gray-100 shadow-sm p-6 flex flex-col items-center text-center">
+          <a href="tools-detail.html" class="card p-6 flex flex-col items-center text-center cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00AEEF]">
             <img src="assets/logo/sharepoint.svg" alt="SharePoint" class="h-12 w-12 mb-3 object-contain" />
             <h3 class="font-bold text-[#171717] text-sm">SharePoint</h3>
             <p class="text-xs text-gray-500 mt-1">Base de conocimiento organizacional</p>
-          </div>
+          </a>
 
           <!-- Dataverse -->
-          <div class="rounded-2xl bg-white border border-gray-100 shadow-sm p-6 flex flex-col items-center text-center">
+          <a href="tools-detail.html" class="card p-6 flex flex-col items-center text-center cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00AEEF]">
             <img src="assets/logo/dataverse.svg" alt="Dataverse" class="h-12 w-12 mb-3 object-contain" />
             <h3 class="font-bold text-[#171717] text-sm">Dataverse</h3>
             <p class="text-xs text-gray-500 mt-1">Datos empresariales estructurados</p>
-          </div>
+          </a>
 
           <!-- Copilot Studio -->
-          <div class="rounded-2xl bg-white border border-gray-100 shadow-sm p-6 flex flex-col items-center text-center">
+          <a href="tools-detail.html" class="card p-6 flex flex-col items-center text-center cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00AEEF]">
             <img src="assets/logo/copilot_studio.svg" alt="Copilot Studio" class="h-12 w-12 mb-3 object-contain" />
             <h3 class="font-bold text-[#171717] text-sm">Copilot Studio</h3>
             <p class="text-xs text-gray-500 mt-1">Agentes de IA personalizados</p>
-          </div>
+          </a>
 
         </div>
       </div>

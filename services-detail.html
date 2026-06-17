@@ -110,21 +110,8 @@
 
   <main class="flex-1">
 
-    <!-- ===== BREADCRUMB ===== -->
-    <nav class="pt-32 pb-4 bg-white" aria-label="Breadcrumb">
-      <div class="container-site">
-        <ol class="flex items-center gap-2 text-sm text-gray-500">
-          <li><a href="index.html" class="hover:text-[#F26522]">Inicio</a></li>
-          <li aria-hidden="true">&#8250;</li>
-          <li><a href="services.html" class="hover:text-[#F26522]">Servicios</a></li>
-          <li aria-hidden="true">&#8250;</li>
-          <li class="text-[#171717] font-semibold" aria-current="page">Power Apps</li>
-        </ol>
-      </div>
-    </nav>
-
-    <!-- ===== HERO ===== -->
-    <section class="relative min-h-0 sm:min-h-[480px] flex items-center overflow-hidden bg-white pb-16">
+    <!-- ===== HERO (breadcrumb integrado) ===== -->
+    <section class="relative min-h-0 sm:min-h-[480px] flex items-center overflow-hidden bg-white pb-16 pt-32">
       <div class="absolute inset-0 z-0">
         <picture>
           <source media="(max-width: 767px)" srcset="assets/hero-service-detail-mobile.webp" />
@@ -132,6 +119,15 @@
         </picture>
       </div>
       <div class="container-site relative z-10">
+        <nav aria-label="Breadcrumb" class="mb-6">
+          <ol class="flex items-center gap-2 text-sm text-gray-500">
+            <li><a href="index.html" class="hover:text-[#F26522]">Inicio</a></li>
+            <li aria-hidden="true">&#8250;</li>
+            <li><a href="services.html" class="hover:text-[#F26522]">Servicios</a></li>
+            <li aria-hidden="true">&#8250;</li>
+            <li class="text-[#171717] font-semibold" aria-current="page">Power Apps</li>
+          </ol>
+        </nav>
         <div class="flex items-center gap-4 mb-4">
           <img src="assets/logo/power_apps.svg" alt="Power Apps" class="h-14 w-14 object-contain" />
           <p class="section-label">Power Apps</p>
@@ -146,7 +142,7 @@
     </section>
 
     <!-- ===== DESARROLLAMOS APLICACIONES EMPRESARIALES A MEDIDA ===== -->
-    <section class="section bg-white">
+    <section class="section" style="background:linear-gradient(180deg,#FFFFFF 0%,#DDE9EE 100%)">
       <div class="container-site">
         <header class="text-center mb-12">
           <p class="section-label mb-2">Lo que hacemos</p>
@@ -156,31 +152,39 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
           <!-- Aplicaciones canvas personalizadas -->
-          <article class="card">
-            <img src="assets/desarrollamos_apps/canva.svg" alt="Aplicaciones canvas personalizadas" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Aplicaciones canvas personalizadas</h3>
-            <p class="text-sm text-gray-600 flex-1">Interfaces diseñadas a medida con la experiencia de usuario que tu equipo necesita, conectadas a cualquier fuente de datos.</p>
+          <article class="card is-media">
+            <img src="assets/powerapps-card-01-canvas-apps.webp" alt="Aplicaciones canvas personalizadas" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Aplicaciones canvas personalizadas</h3>
+              <p class="text-sm text-gray-600">Interfaces diseñadas a medida con la experiencia de usuario que tu equipo necesita, conectadas a cualquier fuente de datos.</p>
+            </div>
           </article>
 
           <!-- Aplicaciones Model-Driven -->
-          <article class="card">
-            <img src="assets/desarrollamos_apps/model_driven.svg" alt="Aplicaciones Model-Driven" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Aplicaciones Model-Driven</h3>
-            <p class="text-sm text-gray-600 flex-1">Soluciones basadas en datos estructurados en Dataverse, ideales para procesos complejos de negocio con lógica avanzada.</p>
+          <article class="card is-media">
+            <img src="assets/powerapps-card-02-model-driven.webp" alt="Aplicaciones Model-Driven" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Aplicaciones Model-Driven</h3>
+              <p class="text-sm text-gray-600">Soluciones basadas en datos estructurados en Dataverse, ideales para procesos complejos de negocio con lógica avanzada.</p>
+            </div>
           </article>
 
           <!-- Integración con Power Automate -->
-          <article class="card">
-            <img src="assets/desarrollamos_apps/integration.svg" alt="Integración con Power Automate" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Integración con Power Automate</h3>
-            <p class="text-sm text-gray-600 flex-1">Automatizamos los flujos de trabajo que rodean tu aplicación: aprobaciones, notificaciones y sincronización de datos en tiempo real.</p>
+          <article class="card is-media">
+            <img src="assets/powerapps-card-03-power-automate.webp" alt="Integración con Power Automate" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Integración con Power Automate</h3>
+              <p class="text-sm text-gray-600">Automatizamos los flujos de trabajo que rodean tu aplicación: aprobaciones, notificaciones y sincronización de datos en tiempo real.</p>
+            </div>
           </article>
 
           <!-- Dataverse como núcleo de datos -->
-          <article class="card">
-            <img src="assets/desarrollamos_apps/dataverse.svg" alt="Dataverse como núcleo de datos" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Dataverse como núcleo de datos</h3>
-            <p class="text-sm text-gray-600 flex-1">Centralizamos y estructuramos la información de tu organización en una plataforma segura, escalable y lista para IA.</p>
+          <article class="card is-media">
+            <img src="assets/powerapps-card-04-dataverse.webp" alt="Dataverse como núcleo de datos" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Dataverse como núcleo de datos</h3>
+              <p class="text-sm text-gray-600">Centralizamos y estructuramos la información de tu organización en una plataforma segura, escalable y lista para IA.</p>
+            </div>
           </article>
 
         </div>
@@ -199,21 +203,21 @@
 
           <!-- Fase 1: Descubrimiento y análisis -->
           <div class="text-center">
-            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 text-white text-2xl font-bold mb-4">1</div>
+            <img src="assets/powerapps-methodology-icon-01-discovery.webp" alt="Descubrimiento y análisis" class="w-14 h-14 object-contain mx-auto mb-4" />
             <h3 class="font-bold text-white text-lg mb-2">Descubrimiento y análisis</h3>
             <p class="text-purple-200 text-sm">Mapeamos tus procesos actuales, identificamos los puntos de dolor y definimos el alcance y objetivos de la aplicación.</p>
           </div>
 
           <!-- Fase 2: Diseño funcional -->
           <div class="text-center">
-            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 text-white text-2xl font-bold mb-4">2</div>
+            <img src="assets/powerapps-methodology-icon-02-design.webp" alt="Diseño funcional" class="w-14 h-14 object-contain mx-auto mb-4" />
             <h3 class="font-bold text-white text-lg mb-2">Diseño funcional</h3>
             <p class="text-purple-200 text-sm">Creamos prototipos y flujos de pantalla para validar la experiencia de usuario antes de iniciar el desarrollo.</p>
           </div>
 
           <!-- Fase 3: Construcción -->
           <div class="text-center">
-            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 text-white text-2xl font-bold mb-4">3</div>
+            <img src="assets/powerapps-methodology-icon-03-build.webp" alt="Construcción" class="w-14 h-14 object-contain mx-auto mb-4" />
             <h3 class="font-bold text-white text-lg mb-2">Construcción</h3>
             <p class="text-purple-200 text-sm">Desarrollamos la aplicación con iteraciones ágiles, integramos las fuentes de datos y desplegamos con acompañamiento en la adopción.</p>
           </div>

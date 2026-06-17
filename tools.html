@@ -120,19 +120,23 @@
       </div>
     </section>
 
-    <!-- ===== BANDA MICROSOFT SOLUTIONS PARTNER ===== -->
-    <section class="py-12 bg-gray-50">
-      <div class="container-site text-center">
-        <p class="text-2xl md:text-3xl font-bold text-[#171717] mb-6">+250 proyectos en Microsoft 365 y Power Platform</p>
-        <div class="flex items-center justify-center gap-6 flex-wrap">
-          <img src="assets/Partner.svg" alt="Microsoft Solutions Partner" class="h-16 object-contain" />
-        </div>
-      </div>
-    </section>
+    <!-- ===== BANDA CERTIFICACIONES ===== -->
+    <div class="w-full leading-none">
+      <picture>
+        <source media="(max-width: 767px)" srcset="assets/certificaciones-mobile.webp" />
+        <img src="assets/Partner.svg" alt="Microsoft Solutions Partner — certificaciones" class="w-full h-auto block" />
+      </picture>
+    </div>
 
     <!-- ===== ECOSISTEMA MICROSOFT (12 herramientas) ===== -->
-    <section id="ecosistema" class="section bg-white">
-      <div class="container-site">
+    <section id="ecosistema" class="section relative overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/tools-ecosystem-bg-mobile.webp" />
+          <img src="assets/tools-ecosystem-bg.webp" alt="" class="w-full h-full object-cover object-center" />
+        </picture>
+      </div>
+      <div class="container-site relative z-10">
         <header class="text-center mb-12">
           <p class="section-label mb-2">Ecosistema</p>
           <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Ecosistema Microsoft</h2>
@@ -253,7 +257,7 @@
     </section>
 
     <!-- ===== SOLUCIONES INTEGRALES (6) ===== -->
-    <section class="section bg-gray-50">
+    <section class="section" style="background:linear-gradient(180deg,#FFFFFF 0%,#DDE9EE 100%)">
       <div class="container-site">
         <header class="text-center mb-12">
           <p class="section-label mb-2">Soluciones</p>
@@ -263,51 +267,63 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
           <!-- 1: Desarrollo de Aplicaciones -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="Desarrollo de Aplicaciones" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Desarrollo de Aplicaciones</h3>
-            <p class="text-sm text-gray-600 flex-1">Apps empresariales con Power Apps y Azure.</p>
-            <a href="services.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Explora la solución &#8594;</a>
+          <article class="card is-media">
+            <img src="assets/tools-solution-card-01-app-development.webp" alt="Desarrollo de Aplicaciones" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Desarrollo de Aplicaciones</h3>
+              <p class="text-sm text-gray-600">Apps empresariales con Power Apps y Azure.</p>
+              <a href="services.html" class="mt-4 inline-block text-sm font-semibold text-[#F26522] hover:opacity-80">Explora la solución &#8594;</a>
+            </div>
           </article>
 
           <!-- 2: Trabajo Moderno -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="Trabajo Moderno" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Trabajo Moderno</h3>
-            <p class="text-sm text-gray-600 flex-1">Colaboración híbrida con Microsoft 365 y Teams.</p>
-            <a href="services.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Explora la solución &#8594;</a>
+          <article class="card is-media">
+            <img src="assets/tools-solution-card-02-modern-work.webp" alt="Trabajo Moderno" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Trabajo Moderno</h3>
+              <p class="text-sm text-gray-600">Colaboración híbrida con Microsoft 365 y Teams.</p>
+              <a href="services.html" class="mt-4 inline-block text-sm font-semibold text-[#F26522] hover:opacity-80">Explora la solución &#8594;</a>
+            </div>
           </article>
 
           <!-- 3: Automatización de Procesos & RPA -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="Automatización de Procesos y RPA" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Automatización de Procesos &amp; RPA</h3>
-            <p class="text-sm text-gray-600 flex-1">Optimización con Power Automate y AI Builder.</p>
-            <a href="services.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Explora la solución &#8594;</a>
+          <article class="card is-media">
+            <img src="assets/tools-solution-card-03-rpa-automation.webp" alt="Automatización de Procesos y RPA" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Automatización de Procesos &amp; RPA</h3>
+              <p class="text-sm text-gray-600">Optimización con Power Automate y AI Builder.</p>
+              <a href="services.html" class="mt-4 inline-block text-sm font-semibold text-[#F26522] hover:opacity-80">Explora la solución &#8594;</a>
+            </div>
           </article>
 
           <!-- 4: Inteligencia de Negocio -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="Inteligencia de Negocio" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Inteligencia de Negocio</h3>
-            <p class="text-sm text-gray-600 flex-1">Dashboards y análisis con Power BI.</p>
-            <a href="services.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Explora la solución &#8594;</a>
+          <article class="card is-media">
+            <img src="assets/tools-solution-card-04-business-intelligence.webp" alt="Inteligencia de Negocio" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Inteligencia de Negocio</h3>
+              <p class="text-sm text-gray-600">Dashboards y análisis con Power BI.</p>
+              <a href="services.html" class="mt-4 inline-block text-sm font-semibold text-[#F26522] hover:opacity-80">Explora la solución &#8594;</a>
+            </div>
           </article>
 
           <!-- 5: Seguridad, Gobierno y Cumplimiento -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="Seguridad, Gobierno y Cumplimiento" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Seguridad, Gobierno y Cumplimiento</h3>
-            <p class="text-sm text-gray-600 flex-1">Protección avanzada con Microsoft Purview y Defender.</p>
-            <a href="services.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Explora la solución &#8594;</a>
+          <article class="card is-media">
+            <img src="assets/tools-solution-card-05-security-governance.webp" alt="Seguridad, Gobierno y Cumplimiento" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Seguridad, Gobierno y Cumplimiento</h3>
+              <p class="text-sm text-gray-600">Protección avanzada con Microsoft Purview y Defender.</p>
+              <a href="services.html" class="mt-4 inline-block text-sm font-semibold text-[#F26522] hover:opacity-80">Explora la solución &#8594;</a>
+            </div>
           </article>
 
           <!-- 6: Asistentes con IA -->
-          <article class="card">
-            <img src="assets/logos/generic.svg" alt="Asistentes con IA" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Asistentes con IA</h3>
-            <p class="text-sm text-gray-600 flex-1">Copilots personalizados con Copilot Studio.</p>
-            <a href="services.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Explora la solución &#8594;</a>
+          <article class="card is-media">
+            <img src="assets/tools-solution-card-06-ai-assistants.webp" alt="Asistentes con IA" class="w-full h-40 object-cover" />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Asistentes con IA</h3>
+              <p class="text-sm text-gray-600">Copilots personalizados con Copilot Studio.</p>
+              <a href="services.html" class="mt-4 inline-block text-sm font-semibold text-[#F26522] hover:opacity-80">Explora la solución &#8594;</a>
+            </div>
           </article>
 
         </div>

@@ -143,57 +143,78 @@
     </section>
 
     <!-- ===== SOLUCIONES TECNOLÓGICAS PARA TU EMPRESA (TECH_SOLUTIONS) ===== -->
-    <section class="section bg-white">
-      <div class="container-site">
+    <section class="section relative overflow-hidden">
+      <!-- Fondo específico por resolución (spec §3.1) -->
+      <div class="absolute inset-0 z-0">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/services-solutions-bg-mobile.webp" />
+          <img src="assets/services-solutions-bg.webp" alt="" class="w-full h-full object-cover object-center" />
+        </picture>
+      </div>
+      <div class="container-site relative z-10">
         <header class="text-center mb-12">
-          <p class="section-label mb-2">Soluciones</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Soluciones tecnológicas para tu empresa</h2>
+          <!-- Etiqueta actualizada: "Nuestros servicios" (spec §3.2) -->
+          <p class="section-label mb-2">Nuestros servicios</p>
+          <h2 class="section-h2">Soluciones tecnológicas para tu empresa</h2>
+          <p class="section-subtitle mx-auto mt-4">Servicios especializados en el ecosistema Microsoft para impulsar la transformación digital de tu organización.</p>
         </header>
+        <!-- Grilla equilibrada: todas las cards con el mismo peso (spec §3.3) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          <!-- Power Platform -->
-          <article class="card">
-            <img src="assets/logo/power_apps.svg" alt="Power Platform" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Power Platform</h3>
-            <p class="text-sm text-gray-600 flex-1">Desarrollo de aplicaciones low-code con Power Apps, Power Automate y Power BI.</p>
-            <a href="services-detail.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+          <!-- Card 1: Power Platform (imagen superior — spec §3.4 / §3.5) -->
+          <article class="card is-media">
+            <img src="assets/services-card-01-power-platform.webp" alt="Power Platform" class="w-full h-40 object-cover" />
+            <div class="p-5 flex flex-col flex-1">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Power Platform</h3>
+              <p class="text-sm text-gray-600 flex-1">Desarrollo de aplicaciones low-code con Power Apps, Power Automate y Power BI.</p>
+              <a href="services-detail.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+            </div>
           </article>
 
-          <!-- Microsoft 365 -->
-          <article class="card">
-            <img src="assets/logo/microsoft365.svg" alt="Microsoft 365" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Microsoft 365</h3>
-            <p class="text-sm text-gray-600 flex-1">Implementación y optimización de tu entorno colaborativo con Teams y SharePoint.</p>
-            <a href="services-detail.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+          <!-- Card 2: Microsoft 365 -->
+          <article class="card is-media">
+            <img src="assets/services-card-02-microsoft-365.webp" alt="Microsoft 365" class="w-full h-40 object-cover" />
+            <div class="p-5 flex flex-col flex-1">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Microsoft 365</h3>
+              <p class="text-sm text-gray-600 flex-1">Implementación y optimización de tu entorno colaborativo con Teams y SharePoint.</p>
+              <a href="services-detail.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+            </div>
           </article>
 
-          <!-- Copilot y soluciones de inteligencia artificial -->
-          <article class="card">
-            <img src="assets/logo/copilot.svg" alt="Copilot y soluciones de inteligencia artificial" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Copilot y soluciones de inteligencia artificial</h3>
-            <p class="text-sm text-gray-600 flex-1">Integración de IA generativa para automatizar procesos y potenciar decisiones.</p>
-            <a href="services-detail.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+          <!-- Card 3: Copilot y soluciones de inteligencia artificial -->
+          <article class="card is-media">
+            <img src="assets/services-card-03-copilot-ai.webp" alt="Copilot y soluciones de inteligencia artificial" class="w-full h-40 object-cover" />
+            <div class="p-5 flex flex-col flex-1">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Copilot y soluciones de inteligencia artificial</h3>
+              <p class="text-sm text-gray-600 flex-1">Integración de IA generativa para automatizar procesos y potenciar decisiones.</p>
+              <a href="services-detail.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+            </div>
           </article>
 
-          <!-- Azure Cloud -->
-          <article class="card">
-            <img src="assets/logo/azure.svg" alt="Azure Cloud" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Azure Cloud</h3>
-            <p class="text-sm text-gray-600 flex-1">Migración, arquitectura y gestión de infraestructura en la nube.</p>
-            <a href="services-detail.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+          <!-- Card 4: Azure Cloud -->
+          <article class="card is-media">
+            <img src="assets/services-card-04-azure-cloud.webp" alt="Azure Cloud" class="w-full h-40 object-cover" />
+            <div class="p-5 flex flex-col flex-1">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Azure Cloud</h3>
+              <p class="text-sm text-gray-600 flex-1">Migración, arquitectura y gestión de infraestructura en la nube.</p>
+              <a href="services-detail.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+            </div>
           </article>
 
-          <!-- Dynamics 365 -->
-          <article class="card">
-            <img src="assets/logo/dynamics.svg" alt="Dynamics 365" class="h-12 w-12 mb-4 object-contain" />
-            <h3 class="font-bold text-lg text-[#171717] mb-2">Dynamics 365</h3>
-            <p class="text-sm text-gray-600 flex-1">Implementación de CRM y ERP para unificar ventas, servicio y operaciones.</p>
-            <a href="services-detail.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+          <!-- Card 5: Dynamics 365 -->
+          <article class="card is-media">
+            <img src="assets/services-card-05-dynamics-365.webp" alt="Dynamics 365" class="w-full h-40 object-cover" />
+            <div class="p-5 flex flex-col flex-1">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Dynamics 365</h3>
+              <p class="text-sm text-gray-600 flex-1">Implementación de CRM y ERP para unificar ventas, servicio y operaciones.</p>
+              <a href="services-detail.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce la solución &#8594;</a>
+            </div>
           </article>
 
         </div>
-        <div class="text-center mt-10">
-          <a href="contact.html" class="btn-primary">Conoce todas nuestras soluciones</a>
+        <!-- CTA inferior de sección (spec §3.6) -->
+        <div class="text-center btn-below-grid">
+          <a href="contact.html" class="btn-primary">Conocé todas nuestras soluciones</a>
         </div>
       </div>
     </section>
@@ -203,33 +224,45 @@
       <div class="container-site">
         <header class="text-center mb-12">
           <p class="section-label mb-2">Metodología</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Nuestro enfoque: de la estrategia a la adopción</h2>
+          <h2 class="section-h2">Nuestro enfoque: de la estrategia a la adopción</h2>
         </header>
         <div class="grid md:grid-cols-2 gap-10 items-center">
-          <img src="assets/metodologia_servicios.svg" alt="Metodología LatinShare" class="rounded-2xl w-full" />
+          <!--
+            Imagen ilustrativa (spec §4.1 / §4.2):
+            - Desktop: tamaño ~60% del original (max-w-xs aprox 320px), proporción 1:1, bordes redondeados, centrada
+            - Mobile: proporción 16:9, centrada, bordes redondeados
+          -->
+          <div class="flex justify-center">
+            <img
+              src="assets/metodologia_servicios.svg"
+              alt="Metodología LatinShare"
+              class="rounded-2xl object-cover w-full aspect-video md:aspect-square md:max-w-xs"
+            />
+          </div>
+          <!-- Pasos con títulos levemente más grandes (spec §4.4) -->
           <ol class="grid grid-cols-2 gap-8">
             <!-- Paso 1: Descubrimiento -->
             <li>
               <span class="text-4xl font-bold text-[#F26522]">1</span>
-              <h3 class="font-bold mt-2 text-[#171717]">Descubrimiento</h3>
+              <h3 class="font-bold text-base md:text-lg mt-2 text-[#171717]">Descubrimiento</h3>
               <p class="text-sm text-gray-600 mt-1">Entendemos tus procesos actuales y definimos objetivos claros.</p>
             </li>
             <!-- Paso 2: Diseño -->
             <li>
               <span class="text-4xl font-bold text-[#F26522]">2</span>
-              <h3 class="font-bold mt-2 text-[#171717]">Diseño</h3>
+              <h3 class="font-bold text-base md:text-lg mt-2 text-[#171717]">Diseño</h3>
               <p class="text-sm text-gray-600 mt-1">Co-creamos la solución perfecta para tu organización.</p>
             </li>
             <!-- Paso 3: Desarrollo -->
             <li>
               <span class="text-4xl font-bold text-[#F26522]">3</span>
-              <h3 class="font-bold mt-2 text-[#171717]">Desarrollo</h3>
+              <h3 class="font-bold text-base md:text-lg mt-2 text-[#171717]">Desarrollo</h3>
               <p class="text-sm text-gray-600 mt-1">Implementamos con agilidad y mejores prácticas Microsoft.</p>
             </li>
             <!-- Paso 4: Implementación -->
             <li>
               <span class="text-4xl font-bold text-[#F26522]">4</span>
-              <h3 class="font-bold mt-2 text-[#171717]">Implementación</h3>
+              <h3 class="font-bold text-base md:text-lg mt-2 text-[#171717]">Implementación</h3>
               <p class="text-sm text-gray-600 mt-1">Desplegamos, capacitamos y acompañamos en la adopción.</p>
             </li>
           </ol>
@@ -238,72 +271,90 @@
     </section>
 
     <!-- ===== CASOS DE ÉXITO ===== -->
+    <!--
+      Layout (spec §5.1):
+      - Desktop: 2 columnas — acordeón izq (~55%), imagen derecha (~45%)
+      - Mobile: 1 columna — encabezado, acordeón, imagen debajo
+    -->
     <section class="section bg-white">
       <div class="container-site">
-        <header class="text-center mb-12">
-          <p class="section-label mb-2">Clientes</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Resultados medibles de nuestros clientes</h2>
-        </header>
-        <div class="max-w-3xl mx-auto divide-y divide-gray-200">
+        <div class="flex flex-col md:flex-row md:gap-10 md:items-start">
 
-          <!-- Sura -->
-          <div class="py-4">
-            <button type="button" data-accordion-trigger aria-expanded="true" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
-              <span class="flex items-center gap-4">
-                <img src="assets/logos/generic.svg" alt="Sura" class="h-8 w-16 object-contain" />
-                <span>Sura</span>
-              </span>
-              <svg data-accordion-icon class="w-5 h-5 transition-transform rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="pt-3 text-sm text-gray-600">La intranet de Sura fue creada sobre SharePoint Online con componentes desarrollados y personalizados permitiendo extender las funcionalidades nativas y componentes para la gestión de información y documentos.</div>
+          <!-- Columna izquierda: encabezado + acordeón -->
+          <div class="md:w-[55%]">
+            <header class="mb-8">
+              <!-- Etiqueta actualizada: "Casos de éxito" (spec §5.2) -->
+              <p class="section-label mb-2">Casos de éxito</p>
+              <h2 class="section-h2">Resultados medibles de nuestros clientes</h2>
+            </header>
+            <div class="divide-y divide-gray-200">
+
+              <!-- Sura (abierto por defecto — spec §5.2) -->
+              <div class="py-4">
+                <button type="button" data-accordion-trigger aria-expanded="true" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
+                  <span class="flex items-center gap-4">
+                    <img src="assets/logos/generic.svg" alt="Sura" class="h-8 w-16 object-contain" />
+                    <span>Sura</span>
+                  </span>
+                  <svg data-accordion-icon class="w-5 h-5 transition-transform rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="pt-3 text-sm text-gray-600">La intranet de Sura fue creada sobre SharePoint Online con componentes desarrollados y personalizados permitiendo extender las funcionalidades nativas y componentes para la gestión de información y documentos.</div>
+              </div>
+
+              <!-- Instore -->
+              <div class="py-4">
+                <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
+                  <span class="flex items-center gap-4">
+                    <img src="assets/logos/generic.svg" alt="Instore" class="h-8 w-16 object-contain" />
+                    <span>Instore</span>
+                  </span>
+                  <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="hidden pt-3 text-sm text-gray-600">Implementación de Power Platform para automatizar flujos de trabajo y optimizar la gestión de operaciones en tiendas retail a lo largo de Latinoamérica.</div>
+              </div>
+
+              <!-- Davila -->
+              <div class="py-4">
+                <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
+                  <span class="flex items-center gap-4">
+                    <img src="assets/logos/generic.svg" alt="Davila" class="h-8 w-16 object-contain" />
+                    <span>Davila</span>
+                  </span>
+                  <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="hidden pt-3 text-sm text-gray-600">Solución de Microsoft 365 y Teams para mejorar la comunicación interna y la colaboración entre equipos distribuidos, aumentando la productividad organizacional.</div>
+              </div>
+
+              <!-- Provider -->
+              <div class="py-4">
+                <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
+                  <span class="flex items-center gap-4">
+                    <img src="assets/logos/generic.svg" alt="Provider" class="h-8 w-16 object-contain" />
+                    <span>Provider</span>
+                  </span>
+                  <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="hidden pt-3 text-sm text-gray-600">Migración a Azure y modernización de infraestructura, logrando mayor disponibilidad y reducción de costos operativos con soluciones cloud escalables.</div>
+              </div>
+
+              <!-- Esabio -->
+              <div class="py-4">
+                <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
+                  <span class="flex items-center gap-4">
+                    <img src="assets/logos/generic.svg" alt="Esabio" class="h-8 w-16 object-contain" />
+                    <span>Esabio</span>
+                  </span>
+                  <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="hidden pt-3 text-sm text-gray-600">Implementación de Power BI y Copilot para analítica avanzada y toma de decisiones basada en datos en tiempo real para la gestión de servicios sanitarios.</div>
+              </div>
+
+            </div>
           </div>
 
-          <!-- Instore -->
-          <div class="py-4">
-            <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
-              <span class="flex items-center gap-4">
-                <img src="assets/logos/generic.svg" alt="Instore" class="h-8 w-16 object-contain" />
-                <span>Instore</span>
-              </span>
-              <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="hidden pt-3 text-sm text-gray-600">Implementación de Power Platform para automatizar flujos de trabajo y optimizar la gestión de operaciones en tiendas retail a lo largo de Latinoamérica.</div>
-          </div>
-
-          <!-- Davila -->
-          <div class="py-4">
-            <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
-              <span class="flex items-center gap-4">
-                <img src="assets/logos/generic.svg" alt="Davila" class="h-8 w-16 object-contain" />
-                <span>Davila</span>
-              </span>
-              <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="hidden pt-3 text-sm text-gray-600">Solución de Microsoft 365 y Teams para mejorar la comunicación interna y la colaboración entre equipos distribuidos, aumentando la productividad organizacional.</div>
-          </div>
-
-          <!-- Provider -->
-          <div class="py-4">
-            <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
-              <span class="flex items-center gap-4">
-                <img src="assets/logos/generic.svg" alt="Provider" class="h-8 w-16 object-contain" />
-                <span>Provider</span>
-              </span>
-              <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="hidden pt-3 text-sm text-gray-600">Migración a Azure y modernización de infraestructura, logrando mayor disponibilidad y reducción de costos operativos con soluciones cloud escalables.</div>
-          </div>
-
-          <!-- Essbio -->
-          <div class="py-4">
-            <button type="button" data-accordion-trigger aria-expanded="false" class="w-full flex items-center justify-between text-left font-semibold text-[#171717]">
-              <span class="flex items-center gap-4">
-                <img src="assets/logos/generic.svg" alt="Essbio" class="h-8 w-16 object-contain" />
-                <span>Essbio</span>
-              </span>
-              <svg data-accordion-icon class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="hidden pt-3 text-sm text-gray-600">Implementación de Power BI y Copilot para analítica avanzada y toma de decisiones basada en datos en tiempo real para la gestión de servicios sanitarios.</div>
+          <!-- Columna derecha (desktop) / debajo del acordeón (mobile): imagen case-study-sura (spec §5.3) -->
+          <div class="md:w-[45%] mt-8 md:mt-0 flex items-start justify-center">
+            <img src="assets/case-study-sura.webp" alt="Caso de éxito Sura" class="w-full rounded-2xl object-cover" />
           </div>
 
         </div>

@@ -160,6 +160,37 @@
       </div>
     </section>
 
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="section-compact relative overflow-hidden text-white">
+      <!-- Fondo por resolución -->
+      <div class="absolute inset-0 z-0">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/contact-newsletter-bg-mobile.webp" />
+          <img src="assets/contact-newsletter-bg.webp" alt="" class="w-full h-full object-cover object-center" />
+        </picture>
+      </div>
+      <div class="absolute inset-0 z-0 bg-black/50"></div>
+      <div class="container-site relative z-10">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+
+          <!-- Bloque izquierdo: ícono + texto -->
+          <div class="flex flex-col items-center md:items-start text-center md:text-left">
+            <img src="assets/newsletter-icon.webp" alt="" style="width:67px;height:47px" class="mb-4 object-contain" />
+            <h2 class="text-2xl font-bold mb-2">Suscríbete a nuestro newsletter</h2>
+            <p class="text-gray-200 text-sm max-w-sm">Te mantendremos actualizado con ofertas, noticias y próximos eventos.</p>
+          </div>
+
+          <!-- Bloque derecho: formulario -->
+          <form class="js-newsletter flex flex-col sm:flex-row w-full md:w-auto gap-2" action="https://formspree.io/f/REEMPLAZAR" method="POST">
+            <input type="email" name="email" required placeholder="tucorreo@empresa.com" class="w-full sm:flex-1 min-w-0 md:w-72 px-4 py-3 rounded-full text-gray-900" />
+            <button type="submit" class="btn-orange w-full sm:w-auto">Suscribirme</button>
+            <p class="js-form-status sr-only" role="status" aria-live="polite"></p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
     <!-- ===== BANDA "Estamos para ayudarte." ===== -->
     <section class="relative section-compact text-white overflow-hidden">
       <div class="absolute inset-0 z-0"><picture><source media="(max-width: 767px)" srcset="assets/cta-contact-mobile.webp" /><img src="assets/cta-contact.webp" alt="" class="w-full h-full object-cover" /></picture></div>
@@ -170,21 +201,6 @@
           <p class="text-gray-300 text-sm max-w-md">Respondemos en menos de 24 horas. Nuestro equipo de especialistas Microsoft está listo para analizar tu caso y ofrecerte la mejor solución.</p>
         </div>
         <a href="#form" class="btn-orange flex-shrink-0">&#161;Hablemos!</a>
-      </div>
-    </section>
-
-    <!-- ===== NEWSLETTER ===== -->
-    <section class="py-16 bg-white border-t border-gray-100">
-      <div class="container-site flex flex-col md:flex-row items-center justify-between gap-6">
-        <div>
-          <h2 class="text-2xl font-bold mb-2 text-[#171717]">Suscríbete a nuestro newsletter</h2>
-          <p class="text-gray-500 text-sm">Te mantendremos actualizado con ofertas, noticias y próximos eventos.</p>
-        </div>
-        <form class="js-newsletter flex flex-col sm:flex-row w-full md:w-auto gap-2" action="https://formspree.io/f/REEMPLAZAR" method="POST">
-          <input type="email" name="email" required placeholder="tucorreo@empresa.com" class="w-full sm:flex-1 min-w-0 md:w-72 px-4 py-3 rounded-full border border-gray-200 text-gray-900" />
-          <button type="submit" class="btn-orange w-full sm:w-auto">Suscribirme</button>
-          <p class="js-form-status sr-only" role="status" aria-live="polite"></p>
-        </form>
       </div>
     </section>
 

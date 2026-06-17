@@ -133,44 +133,119 @@
     </section>
 
     <!-- ===== TIMELINE — NUESTRA HISTORIA DE INNOVACIÓN ===== -->
-    <section id="historia" class="section bg-[#0d1115] text-white">
-      <div class="container-site">
+    <!--
+      Desktop: horizontal 5-col grid, icon above year, noise texture bg (full-bleed picture).
+      Mobile:  vertical stacked list, one milestone per block, icon aligned with block.
+      Spec §1.
+    -->
+    <section id="historia" class="section relative overflow-hidden bg-[#0d1115] text-white">
+      <!-- Full-bleed noise texture background (low-opacity, desktop + mobile) -->
+      <div class="absolute inset-0 z-0 pointer-events-none">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/timeline-noise-bg-mobile.webp" />
+          <img src="assets/timeline-noise-bg.webp" alt="" class="w-full h-full object-cover object-center opacity-30" />
+        </picture>
+      </div>
+
+      <div class="container-site relative z-10">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Nuestra historia de innovación</h2>
-        <ol class="grid grid-cols-2 md:grid-cols-5 gap-8">
+
+        <!-- Desktop: horizontal 5-col timeline -->
+        <ol class="hidden md:grid md:grid-cols-5 gap-8">
 
           <!-- 2014 -->
-          <li class="text-center">
+          <li class="flex flex-col items-center text-center">
+            <img src="assets/timeline-icon-2014-foundation.webp" alt="" class="w-14 h-14 object-contain mb-3" />
             <p class="text-2xl font-bold text-[#F26522] mb-2">2014</p>
             <h3 class="font-semibold mb-1">Nuestros inicios</h3>
             <p class="text-sm text-gray-300">Fundación de LatinShare como distribuidora de soluciones Microsoft en Latinoamérica.</p>
           </li>
 
           <!-- 2019 -->
-          <li class="text-center">
+          <li class="flex flex-col items-center text-center">
+            <img src="assets/timeline-icon-2019-growth.webp" alt="" class="w-14 h-14 object-contain mb-3" />
             <p class="text-2xl font-bold text-[#F26522] mb-2">2019</p>
             <h3 class="font-semibold mb-1">Crecimiento regional</h3>
             <p class="text-sm text-gray-300">Expansión a 5 países de la región y certificación como Microsoft Solutions Partner.</p>
           </li>
 
           <!-- 2020 -->
-          <li class="text-center">
+          <li class="flex flex-col items-center text-center">
+            <img src="assets/timeline-icon-2020-transformation.webp" alt="" class="w-14 h-14 object-contain mb-3" />
             <p class="text-2xl font-bold text-[#F26522] mb-2">2020</p>
             <h3 class="font-semibold mb-1">Transformación digital acelerada</h3>
             <p class="text-sm text-gray-300">Lanzamiento de servicios de implementación de Power Platform y Teams durante la pandemia.</p>
           </li>
 
           <!-- 2022 -->
-          <li class="text-center">
+          <li class="flex flex-col items-center text-center">
+            <img src="assets/timeline-icon-2022-specialization.webp" alt="" class="w-14 h-14 object-contain mb-3" />
             <p class="text-2xl font-bold text-[#F26522] mb-2">2022</p>
             <h3 class="font-semibold mb-1">Especialización en IA</h3>
             <p class="text-sm text-gray-300">Primeras implementaciones de Copilot y soluciones de IA generativa para clientes corporativos.</p>
           </li>
 
           <!-- 2025 -->
-          <li class="text-center">
+          <li class="flex flex-col items-center text-center">
+            <img src="assets/timeline-icon-2025-leadership.webp" alt="" class="w-14 h-14 object-contain mb-3" />
             <p class="text-2xl font-bold text-[#F26522] mb-2">2025</p>
             <h3 class="font-semibold mb-1">Liderazgo en innovación</h3>
             <p class="text-sm text-gray-300">Reconocimiento como partner líder en Power Platform y Copilot en Latinoamérica.</p>
+          </li>
+
+        </ol>
+
+        <!-- Mobile: vertical stacked timeline -->
+        <ol class="flex flex-col gap-8 md:hidden">
+
+          <!-- 2014 -->
+          <li class="flex items-start gap-4">
+            <img src="assets/timeline-icon-2014-foundation.webp" alt="" class="w-12 h-12 object-contain flex-shrink-0 mt-1" />
+            <div>
+              <p class="text-2xl font-bold text-[#F26522] mb-1">2014</p>
+              <h3 class="font-semibold mb-1">Nuestros inicios</h3>
+              <p class="text-sm text-gray-300">Fundación de LatinShare como distribuidora de soluciones Microsoft en Latinoamérica.</p>
+            </div>
+          </li>
+
+          <!-- 2019 -->
+          <li class="flex items-start gap-4">
+            <img src="assets/timeline-icon-2019-growth.webp" alt="" class="w-12 h-12 object-contain flex-shrink-0 mt-1" />
+            <div>
+              <p class="text-2xl font-bold text-[#F26522] mb-1">2019</p>
+              <h3 class="font-semibold mb-1">Crecimiento regional</h3>
+              <p class="text-sm text-gray-300">Expansión a 5 países de la región y certificación como Microsoft Solutions Partner.</p>
+            </div>
+          </li>
+
+          <!-- 2020 -->
+          <li class="flex items-start gap-4">
+            <img src="assets/timeline-icon-2020-transformation.webp" alt="" class="w-12 h-12 object-contain flex-shrink-0 mt-1" />
+            <div>
+              <p class="text-2xl font-bold text-[#F26522] mb-1">2020</p>
+              <h3 class="font-semibold mb-1">Transformación digital acelerada</h3>
+              <p class="text-sm text-gray-300">Lanzamiento de servicios de implementación de Power Platform y Teams durante la pandemia.</p>
+            </div>
+          </li>
+
+          <!-- 2022 -->
+          <li class="flex items-start gap-4">
+            <img src="assets/timeline-icon-2022-specialization.webp" alt="" class="w-12 h-12 object-contain flex-shrink-0 mt-1" />
+            <div>
+              <p class="text-2xl font-bold text-[#F26522] mb-1">2022</p>
+              <h3 class="font-semibold mb-1">Especialización en IA</h3>
+              <p class="text-sm text-gray-300">Primeras implementaciones de Copilot y soluciones de IA generativa para clientes corporativos.</p>
+            </div>
+          </li>
+
+          <!-- 2025 -->
+          <li class="flex items-start gap-4">
+            <img src="assets/timeline-icon-2025-leadership.webp" alt="" class="w-12 h-12 object-contain flex-shrink-0 mt-1" />
+            <div>
+              <p class="text-2xl font-bold text-[#F26522] mb-1">2025</p>
+              <h3 class="font-semibold mb-1">Liderazgo en innovación</h3>
+              <p class="text-sm text-gray-300">Reconocimiento como partner líder en Power Platform y Copilot en Latinoamérica.</p>
+            </div>
           </li>
 
         </ol>
@@ -178,78 +253,151 @@
     </section>
 
     <!-- ===== NUESTRO EQUIPO ===== -->
-    <section class="section bg-white">
-      <div class="container-site">
+    <!--
+      Full-bleed picture bg (team-section-bg.webp / mobile).
+      6 members per spec §2.3. Grid: 3-col desktop, 2-col mobile.
+      Recruitment block + "Ver vacantes" button. Spec §2.
+    -->
+    <section class="section relative overflow-hidden bg-white">
+      <!-- Full-bleed team background aligned center-bottom -->
+      <div class="absolute inset-0 z-0 pointer-events-none">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/team-section-bg-mobile.webp" />
+          <img src="assets/team-section-bg.webp" alt="" class="w-full h-full object-cover object-center" />
+        </picture>
+      </div>
+
+      <div class="container-site relative z-10">
         <header class="text-center mb-12">
           <p class="section-label mb-2">Equipo</p>
           <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Nuestro equipo</h2>
         </header>
+
+        <!-- Grid: 3 col desktop, 2 col mobile -->
         <div class="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
 
-          <!-- Miguel Diomedi — no matching avatar -->
-          <a href="https://linkedin.com/in/miguel-diomedi" target="_blank" rel="noopener" class="text-center group">
-            <img src="assets/team-miguel.webp" alt="Miguel Diomedi" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
-            <h3 class="font-bold text-[#171717]">Miguel Diomedi</h3>
-            <p class="text-sm text-gray-500">CEO</p>
-          </a>
+          <!-- Pascal Donoso -->
+          <div class="flex flex-col items-center text-center">
+            <img src="assets/team-miguel.webp" alt="Pascal Donoso" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
+            <h3 class="font-bold text-[#171717]">Pascal Donoso</h3>
+            <p class="text-sm text-gray-500">Gerente general</p>
+          </div>
 
-          <!-- Rodrigo Orozco — no matching avatar -->
-          <a href="https://linkedin.com/in/rodrigo-orozco" target="_blank" rel="noopener" class="text-center group">
-            <img src="assets/team-rodrigo.webp" alt="Rodrigo Orozco Candia" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
-            <h3 class="font-bold text-[#171717]">Rodrigo Orozco Candia</h3>
-            <p class="text-sm text-gray-500">Gerente General Chile y Argentina</p>
-          </a>
+          <!-- Josefina Donoso Candia -->
+          <div class="flex flex-col items-center text-center">
+            <img src="assets/team-thamara.webp" alt="Josefina Donoso Candia" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
+            <h3 class="font-bold text-[#171717]">Josefina Donoso Candia</h3>
+            <p class="text-sm text-gray-500">Business Development</p>
+          </div>
 
-          <!-- Thamara García — no matching avatar (avatar file: thannia.svg doesn't match "Thamara") -->
-          <a href="https://linkedin.com/in/thamara-garcia" target="_blank" rel="noopener" class="text-center group">
-            <img src="assets/team-thamara.webp" alt="Thamara García Dué Tovar" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
-            <h3 class="font-bold text-[#171717]">Thamara García Dué Tovar</h3>
-            <p class="text-sm text-gray-500">Presidenta México y Centroamérica</p>
-          </a>
+          <!-- Elizabeth Carrasco Buschman -->
+          <div class="flex flex-col items-center text-center">
+            <img src="assets/avatars/elizabeth.svg" alt="Elizabeth Carrasco Buschman" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
+            <h3 class="font-bold text-[#171717]">Elizabeth Carrasco Buschman</h3>
+            <p class="text-sm text-gray-500">Analista QA</p>
+          </div>
 
-          <!-- Joaquín Torrejon — avatar: joaquin.svg -->
-          <a href="https://linkedin.com/in/joaquin-echeverria" target="_blank" rel="noopener" class="text-center group">
+          <!-- Joaquín Torrejon Echeverría -->
+          <div class="flex flex-col items-center text-center">
             <img src="assets/avatars/joaquin.svg" alt="Joaquín Torrejon Echeverría" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
             <h3 class="font-bold text-[#171717]">Joaquín Torrejon Echeverría</h3>
-            <p class="text-sm text-gray-500">Analista de Proyectos y Power Platform</p>
-          </a>
+            <p class="text-sm text-gray-500">Analista de negocios y gestión de proyectos TI</p>
+          </div>
 
-          <!-- Angelo Palomino — avatar: angelo.svg -->
-          <a href="https://linkedin.com/in/angelo-mantovani" target="_blank" rel="noopener" class="text-center group">
-            <img src="assets/avatars/angelo.svg" alt="Angelo Palomino Mantovani" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
-            <h3 class="font-bold text-[#171717]">Angelo Palomino Mantovani</h3>
+          <!-- Ángelo Palavecino Montecinos -->
+          <div class="flex flex-col items-center text-center">
+            <img src="assets/avatars/angelo.svg" alt="Ángelo Palavecino Montecinos" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
+            <h3 class="font-bold text-[#171717]">Ángelo Palavecino Montecinos</h3>
             <p class="text-sm text-gray-500">Consultor Senior Power Platform</p>
-          </a>
+          </div>
 
-          <!-- Elizabeth Carmona — avatar: elizabeth.svg -->
-          <a href="https://linkedin.com/in/elizabeth-boudhram" target="_blank" rel="noopener" class="text-center group">
-            <img src="assets/avatars/elizabeth.svg" alt="Elizabeth Carmona Boudhram" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
-            <h3 class="font-bold text-[#171717]">Elizabeth Carmona Boudhram</h3>
-            <p class="text-sm text-gray-500">Desarrolladora</p>
-          </a>
+          <!-- Brendan Murtagh Veloz -->
+          <div class="flex flex-col items-center text-center">
+            <img src="assets/team-rodrigo.webp" alt="Brendan Murtagh Veloz" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover bg-gray-100" />
+            <h3 class="font-bold text-[#171717]">Brendan Murtagh Veloz</h3>
+            <p class="text-sm text-gray-500">Ingeniero Power Platform</p>
+          </div>
 
         </div>
-        <div class="text-center mt-10">
+
+        <!-- Recruitment block -->
+        <div class="text-center mt-12">
+          <h3 class="text-2xl font-bold text-[#171717] mb-2">Únete a nuestro equipo</h3>
+          <p class="text-gray-600 mb-6">Buscamos talentos apasionados por la tecnología y la innovación.</p>
           <a href="contact.html" class="btn-primary">Ver vacantes</a>
         </div>
+
       </div>
     </section>
 
-    <!-- ===== MICROSOFT SOLUTIONS PARTNER (BADGES) ===== -->
-    <section class="py-16 bg-gray-50">
-      <div class="container-site text-center">
-        <p class="section-label mb-3">Certificaciones</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-[#171717] mb-8">Microsoft Solutions Partner</h2>
-        <div class="flex flex-wrap items-center justify-center gap-8">
-          <img src="assets/microsoftsolutionspartner.svg" alt="Microsoft Solutions Partner" class="h-20 object-contain" />
-          <img src="assets/Partner.svg" alt="Microsoft Partner" class="h-16 object-contain" />
+    <!-- ===== MICROSOFT SOLUTIONS PARTNER ===== -->
+    <!--
+      Desktop: two-column — left: logo + text block; right: 3x2 grid of cert images.
+      Mobile: single column — label, title, logo, text, 2x3 cert grid. Spec §3.
+    -->
+    <section class="section bg-gray-50">
+      <div class="container-site">
+
+        <!-- Section header: label + title (mobile: centered; desktop: left-aligned in layout) -->
+        <div class="mb-10 md:hidden text-center">
+          <p class="section-label mb-2">Certificaciones</p>
+          <h2 class="text-3xl font-bold text-[#171717]">Microsoft Solutions Partner</h2>
         </div>
-        <p class="mt-6 text-gray-600 max-w-2xl mx-auto">Más de 10 años como partner certificado de Microsoft, ayudando a organizaciones de Latinoamérica a transformar su productividad con tecnología.</p>
+
+        <!-- Two-column desktop layout -->
+        <div class="flex flex-col md:flex-row md:gap-12 md:items-start">
+
+          <!-- Left column: label (desktop only) + logo + text block -->
+          <div class="md:w-[45%] flex flex-col items-center md:items-start text-center md:text-left">
+            <!-- Desktop section label + title -->
+            <div class="hidden md:block mb-6">
+              <p class="section-label mb-2">Certificaciones</p>
+              <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Microsoft Solutions Partner</h2>
+            </div>
+
+            <!-- Main logo -->
+            <img src="assets/solutions-partner-main-logo.webp" alt="Microsoft Solutions Partner" class="h-24 object-contain mb-6" />
+
+            <!-- Text block -->
+            <div class="max-w-sm">
+              <p class="text-4xl font-extrabold text-[#171717] leading-none mb-1">+250 proyectos</p>
+              <p class="text-lg font-semibold text-[#F26522] mb-4">en Microsoft 365 y Power Platform</p>
+              <p class="text-sm text-gray-600 leading-relaxed">Trabajamos con su stack completo para integrar colaboración, automatización y analítica en tus procesos: Microsoft 365, Power Platform (Power Apps, Power Automate, Power BI), SharePoint, Azure y Teams.</p>
+            </div>
+          </div>
+
+          <!-- Right column: 6 certification images (3x2 desktop, 2x3 mobile) -->
+          <div class="mt-10 md:mt-0 md:w-[55%]">
+            <!-- Desktop grid: 3 cols x 2 rows -->
+            <div class="hidden md:grid md:grid-cols-3 gap-4">
+              <img src="assets/solutions-partner-card-01-modern-work.webp" alt="Modern Work" class="w-full h-auto object-contain rounded-xl" />
+              <img src="assets/solutions-partner-card-02-security.webp" alt="Security" class="w-full h-auto object-contain rounded-xl" />
+              <img src="assets/solutions-partner-card-03-business-applications.webp" alt="Business Applications" class="w-full h-auto object-contain rounded-xl" />
+              <img src="assets/solutions-partner-card-04-data-ai.webp" alt="Data and AI" class="w-full h-auto object-contain rounded-xl" />
+              <img src="assets/solutions-partner-card-05-digital-app-innovation.webp" alt="Digital and App Innovation" class="w-full h-auto object-contain rounded-xl" />
+              <img src="assets/solutions-partner-card-06-infrastructure.webp" alt="Infrastructure" class="w-full h-auto object-contain rounded-xl" />
+            </div>
+            <!-- Mobile grid: 2 cols x 3 rows -->
+            <div class="grid grid-cols-2 gap-4 md:hidden">
+              <img src="assets/solutions-partner-card-01-modern-work.webp" alt="Modern Work" class="w-full h-auto object-contain rounded-xl" />
+              <img src="assets/solutions-partner-card-02-security.webp" alt="Security" class="w-full h-auto object-contain rounded-xl" />
+              <img src="assets/solutions-partner-card-03-business-applications.webp" alt="Business Applications" class="w-full h-auto object-contain rounded-xl" />
+              <img src="assets/solutions-partner-card-04-data-ai.webp" alt="Data and AI" class="w-full h-auto object-contain rounded-xl" />
+              <img src="assets/solutions-partner-card-05-digital-app-innovation.webp" alt="Digital and App Innovation" class="w-full h-auto object-contain rounded-xl" />
+              <img src="assets/solutions-partner-card-06-infrastructure.webp" alt="Infrastructure" class="w-full h-auto object-contain rounded-xl" />
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
     <!-- ===== NUESTRA FORMA DE TRABAJAR (WORK VALUES) ===== -->
-    <section class="section bg-white">
+    <!--
+      Gray bg, 4-col desktop / 1-col mobile.
+      Icon (left-aligned) above title in each card. Spec §4.
+    -->
+    <section class="section bg-gray-100">
       <div class="container-site">
         <header class="text-center mb-12">
           <p class="section-label mb-2">Valores</p>
@@ -259,6 +407,7 @@
 
           <!-- Colaboración -->
           <article class="card">
+            <img src="assets/work-value-icon-01-collaboration.webp" alt="" class="w-10 h-10 object-contain mb-3" />
             <h3 class="font-bold text-lg text-[#171717] mb-3">Colaboración</h3>
             <p class="text-sm text-gray-600 flex-1">Trabajamos contigo, no para ti. Juntos construimos soluciones que transforman.</p>
             <a href="contact.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce cómo colaboramos &#8594;</a>
@@ -266,6 +415,7 @@
 
           <!-- Productividad -->
           <article class="card">
+            <img src="assets/work-value-icon-02-productivity.webp" alt="" class="w-10 h-10 object-contain mb-3" />
             <h3 class="font-bold text-lg text-[#171717] mb-3">Productividad</h3>
             <p class="text-sm text-gray-600 flex-1">Optimizamos cada proceso para que tu equipo logre más en menos tiempo.</p>
             <a href="contact.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce cómo colaboramos &#8594;</a>
@@ -273,6 +423,7 @@
 
           <!-- Excelencia técnica -->
           <article class="card">
+            <img src="assets/work-value-icon-03-technical-excellence.webp" alt="" class="w-10 h-10 object-contain mb-3" />
             <h3 class="font-bold text-lg text-[#171717] mb-3">Excelencia técnica</h3>
             <p class="text-sm text-gray-600 flex-1">Certificaciones Microsoft y mejores prácticas en cada implementación.</p>
             <a href="contact.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce cómo colaboramos &#8594;</a>
@@ -280,6 +431,7 @@
 
           <!-- Adaptabilidad -->
           <article class="card">
+            <img src="assets/work-value-icon-04-adaptability.webp" alt="" class="w-10 h-10 object-contain mb-3" />
             <h3 class="font-bold text-lg text-[#171717] mb-3">Adaptabilidad</h3>
             <p class="text-sm text-gray-600 flex-1">Soluciones flexibles que crecen y evolucionan con tu organización.</p>
             <a href="contact.html" class="mt-4 text-sm font-semibold text-[#F26522] hover:opacity-80">Conoce cómo colaboramos &#8594;</a>
@@ -292,7 +444,10 @@
     <!-- ===== CTA "TRABAJEMOS JUNTOS" ===== -->
     <section class="relative section text-white overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <picture><source media="(max-width: 767px)" srcset="assets/cta-about-mobile.webp" /><img src="assets/cta-about.webp" alt="" class="w-full h-full object-cover" /></picture>
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/cta-about-mobile.webp" />
+          <img src="assets/cta-about.webp" alt="" class="w-full h-full object-cover" />
+        </picture>
       </div>
       <div class="absolute inset-0 z-0 bg-black/40"></div>
       <div class="container-site relative z-10 text-center">
