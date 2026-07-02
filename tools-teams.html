@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== Google Tag Manager (reemplazar GTM-XXXXXXX) ===== -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- ===== End GTM ===== -->
+
+  <!-- SEO -->
+  <title>Microsoft Teams | LatinShare</title>
+  <meta name="description" content="Implementa Microsoft Teams en tu organización con LatinShare. Plataforma de colaboración, reuniones y comunicación empresarial para equipos modernos." />
+  <link rel="canonical" href="https://www.latinshare.com/tools/teams" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="LatinShare" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:site_name" content="LatinShare" />
+  <meta property="og:url" content="https://www.latinshare.com/tools/teams" />
+  <meta property="og:title" content="Microsoft Teams | LatinShare" />
+  <meta property="og:description" content="Implementa Microsoft Teams en tu organización con LatinShare. Plataforma de colaboración, reuniones y comunicación empresarial." />
+  <meta property="og:image" content="https://www.latinshare.com/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Microsoft Teams | LatinShare" />
+  <meta name="twitter:description" content="Implementa Microsoft Teams en tu organización con LatinShare. Plataforma de colaboración, reuniones y comunicación empresarial." />
+  <meta name="twitter:image" content="https://www.latinshare.com/assets/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/loog.svg" type="image/svg+xml" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;500;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind v4 (CDN navegador) + tokens de marca -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary-orange: #F26522;
+      --color-primary-blue: #00AEEF;
+      --color-primary-green: #225640;
+      --color-text-dark: #2A3540;
+      --font-display: 'Funnel Display', sans-serif;
+      --font-body: 'Nunito', sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- JSON-LD: Organization (global) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LatinShare",
+    "url": "https://www.latinshare.com/",
+    "logo": "https://www.latinshare.com/assets/loog.svg",
+    "description": "Microsoft Solutions Partner especializado en Microsoft 365, Power Platform, Azure, Dynamics 365 y Copilot para Latinoamérica.",
+    "email": "contacto@latinshare.com",
+    "sameAs": [
+      "https://www.linkedin.com/company/latinshare/",
+      "https://www.youtube.com/@DOCTOR365"
+    ],
+    "contactPoint": [
+      { "@type": "ContactPoint", "telephone": "+56-9-82898422", "contactType": "sales", "areaServed": "CL" },
+      { "@type": "ContactPoint", "telephone": "+52-55-68287346", "contactType": "sales", "areaServed": "MX" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.latinshare.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Herramientas", "item": "https://www.latinshare.com/tools" },
+      { "@type": "ListItem", "position": 3, "name": "Microsoft Teams", "item": "https://www.latinshare.com/tools/teams" }
+    ]
+  }
+  </script>
+</head>
+<body class="flex flex-col min-h-screen antialiased">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" title="Google Tag Manager" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header data-include="partials/header.html"></header>
+
+  <main class="flex-1">
+
+    <!-- ===== HERO (breadcrumb integrado) ===== -->
+    <section class="relative min-h-0 sm:min-h-[480px] flex items-center overflow-hidden bg-white pb-16 pt-28 sm:pt-32">
+      <div class="absolute inset-0 z-0">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/hero-tool-detail-mobile.webp" />
+          <img src="assets/hero-tool-detail.webp" alt="" class="w-full h-full object-cover object-center" />
+        </picture>
+      </div>
+      <div class="container-site relative z-10">
+        <!-- Breadcrumb integrado sobre el fondo del hero -->
+        <nav aria-label="Breadcrumb" class="mb-6">
+          <ol class="flex items-center gap-2 text-sm text-gray-500">
+            <li><a href="index.html" class="hover:text-[#F26522]">Inicio</a></li>
+            <li aria-hidden="true">&#8250;</li>
+            <li><a href="tools.html" class="hover:text-[#F26522]">Herramientas</a></li>
+            <li aria-hidden="true">&#8250;</li>
+            <li class="text-[#171717] font-semibold" aria-current="page">Microsoft Teams</li>
+          </ol>
+        </nav>
+        <div class="flex items-center gap-4 mb-4">
+          <img src="assets/logo/teams.svg" alt="Microsoft Teams" class="h-16 w-16 object-contain" />
+          <p class="section-label">Microsoft Teams</p>
+        </div>
+        <h1 class="text-[30px] sm:text-5xl font-extrabold text-[#171717] leading-[1.05] mb-5 max-w-[560px]">Conecta, colabora y comunica a tu equipo desde cualquier lugar</h1>
+        <p class="text-base text-[#262626] leading-relaxed mb-8 max-w-[560px]">Plataforma de colaboración, reuniones y comunicación empresarial. Teams unifica chats, videollamadas, archivos y aplicaciones en un solo espacio de trabajo para que tus equipos sean más productivos.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="contact.html" class="btn-primary">Quiero implementar Teams</a>
+          <a href="contact.html" class="btn-secondary">Solicita una demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUÉ PUEDES HACER CON TEAMS ===== -->
+    <section class="section" style="background:linear-gradient(180deg,#FFFFFF 0%,#DDE9EE 100%)">
+      <div class="container-site">
+        <header class="text-center mb-12">
+          <p class="section-label mb-2">Lo que hacemos</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Implementamos Microsoft Teams en tu organización</h2>
+          <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Configuramos Teams como el hub de comunicación central de tu empresa, integrando canales, reuniones y herramientas para potenciar la colaboración de tus equipos desde el primer día.</p>
+        </header>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <article class="card is-media">
+            <div class="w-full h-40 bg-[#4B53BC]/10 flex items-center justify-center">
+              <img src="assets/logo/teams.svg" alt="Canales y chats" class="h-16 w-16 object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Canales y chats</h3>
+              <p class="text-sm text-gray-600">Organiza la comunicación por proyectos, departamentos y temas mediante canales estructurados que mantienen las conversaciones ordenadas y accesibles.</p>
+            </div>
+          </article>
+
+          <article class="card is-media">
+            <div class="w-full h-40 bg-[#4B53BC]/10 flex items-center justify-center">
+              <img src="assets/logo/microsoft365.svg" alt="Reuniones y videollamadas" class="h-16 w-16 object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Reuniones y videollamadas</h3>
+              <p class="text-sm text-gray-600">Organiza reuniones virtuales con hasta miles de participantes, con salas de espera, grabación automática y transcripción en tiempo real con IA.</p>
+            </div>
+          </article>
+
+          <article class="card is-media">
+            <div class="w-full h-40 bg-[#4B53BC]/10 flex items-center justify-center">
+              <img src="assets/logo/sharepoint.svg" alt="Colaboración en documentos" class="h-16 w-16 object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Colaboración en documentos</h3>
+              <p class="text-sm text-gray-600">Edita documentos de Word, Excel y PowerPoint en tiempo real directamente desde Teams, con almacenamiento automático en SharePoint.</p>
+            </div>
+          </article>
+
+          <article class="card is-media">
+            <div class="w-full h-40 bg-[#4B53BC]/10 flex items-center justify-center">
+              <img src="assets/logo/power_apps.svg" alt="Integración de aplicaciones" class="h-16 w-16 object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Integración de aplicaciones</h3>
+              <p class="text-sm text-gray-600">Incorpora aplicaciones empresariales, bots y flujos de Power Platform directamente en Teams para centralizar el trabajo sin cambiar de contexto.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BENEFICIOS CLAVE ===== -->
+    <section class="section" style="background:linear-gradient(135deg,#4B53BC 0%,#2d3170 100%)">
+      <div class="container-site">
+        <header class="text-center mb-12">
+          <p class="text-[#F26522] font-semibold font-display mb-2">Beneficios</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-white">Lo que Teams puede hacer por tu organización</h2>
+          <p class="mt-4 text-blue-200 max-w-xl mx-auto">Resultados medibles que nuestros clientes obtienen al implementar Teams con LatinShare.</p>
+        </header>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+
+          <div class="text-center">
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 mb-4">
+              <img src="assets/logo/teams.svg" alt="" class="w-8 h-8 object-contain" />
+            </div>
+            <h3 class="font-bold text-white text-lg mb-2">Productividad unificada</h3>
+            <p class="text-blue-200 text-sm">Reduce el tiempo dedicado a cambiar entre aplicaciones hasta un 35% al centralizar chats, reuniones, archivos y tareas en una sola plataforma.</p>
+          </div>
+
+          <div class="text-center">
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 mb-4">
+              <img src="assets/logo/microsoft365.svg" alt="" class="w-8 h-8 object-contain" />
+            </div>
+            <h3 class="font-bold text-white text-lg mb-2">Colaboración sin fronteras</h3>
+            <p class="text-blue-200 text-sm">Conecta equipos distribuidos en distintas ciudades y países con la misma experiencia de trabajo, reduciendo costos de desplazamiento y aumentando la eficiencia.</p>
+          </div>
+
+          <div class="text-center">
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 mb-4">
+              <img src="assets/logo/entra_id.svg" alt="" class="w-8 h-8 object-contain" />
+            </div>
+            <h3 class="font-bold text-white text-lg mb-2">Seguridad empresarial</h3>
+            <p class="text-blue-200 text-sm">Comunicaciones cifradas de extremo a extremo, controles de acceso granulares y cumplimiento normativo integrado para proteger la información de tu empresa.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TECNOLOGÍAS QUE POTENCIAN TEAMS ===== -->
+    <section class="section bg-gray-50">
+      <div class="container-site">
+        <header class="text-center mb-12">
+          <p class="section-label mb-2">Tecnologías</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Tecnologías que potencian Teams</h2>
+        </header>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+
+          <a href="tools-sharepoint.html" class="card p-6 flex flex-col items-center text-center cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00AEEF]">
+            <img src="assets/logo/sharepoint.svg" alt="SharePoint" class="h-12 w-12 mb-3 object-contain" />
+            <h3 class="font-bold text-[#171717] text-sm">SharePoint</h3>
+            <p class="text-xs text-gray-500 mt-1">Repositorio de documentos integrado</p>
+          </a>
+
+          <a href="tools-outlook.html" class="card p-6 flex flex-col items-center text-center cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00AEEF]">
+            <img src="assets/logo/outlook.svg" alt="Outlook" class="h-12 w-12 mb-3 object-contain" />
+            <h3 class="font-bold text-[#171717] text-sm">Outlook</h3>
+            <p class="text-xs text-gray-500 mt-1">Calendario y correo sincronizados</p>
+          </a>
+
+          <a href="tools-detail.html" class="card p-6 flex flex-col items-center text-center cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00AEEF]">
+            <img src="assets/logo/copilot.svg" alt="Copilot" class="h-12 w-12 mb-3 object-contain" />
+            <h3 class="font-bold text-[#171717] text-sm">Copilot</h3>
+            <p class="text-xs text-gray-500 mt-1">IA integrada en reuniones y chats</p>
+          </a>
+
+          <a href="tools-power-automate.html" class="card p-6 flex flex-col items-center text-center cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00AEEF]">
+            <img src="assets/logo/power_automate.svg" alt="Power Automate" class="h-12 w-12 mb-3 object-contain" />
+            <h3 class="font-bold text-[#171717] text-sm">Power Automate</h3>
+            <p class="text-xs text-gray-500 mt-1">Automatización de notificaciones</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="relative section text-white overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <picture><source media="(max-width: 767px)" srcset="assets/cta-tools-mobile.webp" /><img src="assets/cta-tools.webp" alt="" class="w-full h-full object-cover" /></picture>
+      </div>
+      <div class="absolute inset-0 z-0 bg-black/45"></div>
+      <div class="container-site relative z-10 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Construyamos juntos el espacio de trabajo del futuro</h2>
+        <p class="text-gray-200 mb-8 max-w-xl mx-auto">Hablemos sobre cómo Microsoft Teams puede transformar la comunicación y colaboración de tus equipos con la asesoría experta de LatinShare.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="contact.html" class="btn-orange text-base">Agendar diagnóstico gratuito</a>
+          <a href="tools.html" class="btn-secondary text-base">Ver todas las herramientas</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-include="partials/footer.html"></div>
+
+  <script src="js/include.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

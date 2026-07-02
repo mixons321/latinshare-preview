@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== Google Tag Manager (reemplazar GTM-XXXXXXX) ===== -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- ===== End GTM ===== -->
+
+  <!-- SEO -->
+  <title>SharePoint | LatinShare</title>
+  <meta name="description" content="Crea intranets colaborativas y repositorios centralizados de documentos con SharePoint. LatinShare te acompaña en toda la implementación." />
+  <link rel="canonical" href="https://www.latinshare.com/tools/sharepoint" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="LatinShare" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:site_name" content="LatinShare" />
+  <meta property="og:url" content="https://www.latinshare.com/tools/sharepoint" />
+  <meta property="og:title" content="SharePoint | LatinShare" />
+  <meta property="og:description" content="Crea intranets colaborativas y repositorios centralizados de documentos con SharePoint. LatinShare te acompaña en toda la implementación." />
+  <meta property="og:image" content="https://www.latinshare.com/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SharePoint | LatinShare" />
+  <meta name="twitter:description" content="Crea intranets colaborativas y repositorios centralizados de documentos con SharePoint. LatinShare te acompaña en toda la implementación." />
+  <meta name="twitter:image" content="https://www.latinshare.com/assets/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/loog.svg" type="image/svg+xml" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;500;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind v4 (CDN navegador) + tokens de marca -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-primary-orange: #F26522;
+      --color-primary-blue: #00AEEF;
+      --color-primary-green: #225640;
+      --color-text-dark: #2A3540;
+      --font-display: 'Funnel Display', sans-serif;
+      --font-body: 'Nunito', sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- JSON-LD: Organization (global) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LatinShare",
+    "url": "https://www.latinshare.com/",
+    "logo": "https://www.latinshare.com/assets/loog.svg",
+    "description": "Microsoft Solutions Partner especializado en Microsoft 365, Power Platform, Azure, Dynamics 365 y Copilot para Latinoamérica.",
+    "email": "contacto@latinshare.com",
+    "sameAs": [
+      "https://www.linkedin.com/company/latinshare/",
+      "https://www.youtube.com/@DOCTOR365"
+    ],
+    "contactPoint": [
+      { "@type": "ContactPoint", "telephone": "+56-9-82898422", "contactType": "sales", "areaServed": "CL" },
+      { "@type": "ContactPoint", "telephone": "+52-55-68287346", "contactType": "sales", "areaServed": "MX" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.latinshare.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Herramientas", "item": "https://www.latinshare.com/tools" },
+      { "@type": "ListItem", "position": 3, "name": "SharePoint", "item": "https://www.latinshare.com/tools/sharepoint" }
+    ]
+  }
+  </script>
+</head>
+<body class="flex flex-col min-h-screen antialiased">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" title="Google Tag Manager" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header data-include="partials/header.html"></header>
+
+  <main class="flex-1">
+
+    <!-- ===== HERO (breadcrumb integrado) ===== -->
+    <section class="relative min-h-0 sm:min-h-[480px] flex items-center overflow-hidden bg-white pb-16 pt-28 sm:pt-32">
+      <div class="absolute inset-0 z-0">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/hero-tool-detail-mobile.webp" />
+          <img src="assets/hero-tool-detail.webp" alt="" class="w-full h-full object-cover object-center" />
+        </picture>
+      </div>
+      <div class="container-site relative z-10">
+        <!-- Breadcrumb integrado sobre el fondo del hero -->
+        <nav aria-label="Breadcrumb" class="mb-6">
+          <ol class="flex items-center gap-2 text-sm text-gray-500">
+            <li><a href="index.html" class="hover:text-[#F26522]">Inicio</a></li>
+            <li aria-hidden="true">&#8250;</li>
+            <li><a href="tools.html" class="hover:text-[#F26522]">Herramientas</a></li>
+            <li aria-hidden="true">&#8250;</li>
+            <li class="text-[#171717] font-semibold" aria-current="page">SharePoint</li>
+          </ol>
+        </nav>
+        <div class="flex items-center gap-4 mb-4">
+          <img src="assets/logo/sharepoint.svg" alt="SharePoint" class="h-16 w-16 object-contain" />
+          <p class="section-label">SharePoint</p>
+        </div>
+        <h1 class="text-[30px] sm:text-5xl font-extrabold text-[#171717] leading-[1.05] mb-5 max-w-[560px]">Centraliza el conocimiento y la colaboración documental de tu empresa</h1>
+        <p class="text-base text-[#262626] leading-relaxed mb-8 max-w-[560px]">Repositorio centralizado de documentos e intranets colaborativas. SharePoint te permite organizar, compartir y gestionar el conocimiento de tu organización de forma segura y accesible desde cualquier dispositivo.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="contact.html" class="btn-primary">Quiero implementar SharePoint</a>
+          <a href="contact.html" class="btn-secondary">Solicita una demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUÉ PUEDES HACER CON SHAREPOINT ===== -->
+    <section class="section" style="background:linear-gradient(180deg,#FFFFFF 0%,#DDE9EE 100%)">
+      <div class="container-site">
+        <header class="text-center mb-12">
+          <p class="section-label mb-2">Lo que hacemos</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Implementamos SharePoint en tu organización</h2>
+          <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Diseñamos arquitecturas de información y sitios SharePoint adaptados a los procesos de tu empresa, para que cada equipo encuentre lo que necesita en el momento justo.</p>
+        </header>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <article class="card is-media">
+            <div class="w-full h-40 bg-[#038387]/10 flex items-center justify-center">
+              <img src="assets/logo/sharepoint.svg" alt="Intranet corporativa" class="h-16 w-16 object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Intranet corporativa</h3>
+              <p class="text-sm text-gray-600">Diseñamos y construimos tu intranet con sitios de comunicación atractivos que mantienen a todos los empleados informados y conectados a la cultura organizacional.</p>
+            </div>
+          </article>
+
+          <article class="card is-media">
+            <div class="w-full h-40 bg-[#038387]/10 flex items-center justify-center">
+              <img src="assets/logo/teams.svg" alt="Gestión documental" class="h-16 w-16 object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Gestión documental</h3>
+              <p class="text-sm text-gray-600">Organiza bibliotecas de documentos con control de versiones, metadatos personalizados y flujos de aprobación para mantener la información siempre actualizada y ordenada.</p>
+            </div>
+          </article>
+
+          <article class="card is-media">
+            <div class="w-full h-40 bg-[#038387]/10 flex items-center justify-center">
+              <img src="assets/logo/copilot.svg" alt="Búsqueda inteligente" class="h-16 w-16 object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Búsqueda inteligente</h3>
+              <p class="text-sm text-gray-600">Localiza cualquier documento, persona o información en segundos con la búsqueda semántica impulsada por IA que entiende el contexto de lo que buscas.</p>
+            </div>
+          </article>
+
+          <article class="card is-media">
+            <div class="w-full h-40 bg-[#038387]/10 flex items-center justify-center">
+              <img src="assets/logo/power_automate.svg" alt="Flujos de aprobación" class="h-16 w-16 object-contain" />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-[#171717] mb-2">Flujos de aprobación</h3>
+              <p class="text-sm text-gray-600">Automatiza procesos de revisión y aprobación de documentos con flujos de trabajo integrados con Power Automate, eliminando correos y seguimientos manuales.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BENEFICIOS CLAVE ===== -->
+    <section class="section" style="background:linear-gradient(135deg,#038387 0%,#025557 100%)">
+      <div class="container-site">
+        <header class="text-center mb-12">
+          <p class="text-[#F26522] font-semibold font-display mb-2">Beneficios</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-white">Lo que SharePoint puede hacer por tu organización</h2>
+          <p class="mt-4 text-teal-100 max-w-xl mx-auto">Resultados medibles que nuestros clientes obtienen al implementar SharePoint con LatinShare.</p>
+        </header>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+
+          <div class="text-center">
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 mb-4">
+              <img src="assets/logo/sharepoint.svg" alt="" class="w-8 h-8 object-contain" />
+            </div>
+            <h3 class="font-bold text-white text-lg mb-2">Un solo lugar para todo</h3>
+            <p class="text-teal-100 text-sm">Elimina la dispersión de archivos en discos locales, correos y carpetas compartidas al centralizar toda la documentación corporativa en un repositorio accesible y organizado.</p>
+          </div>
+
+          <div class="text-center">
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 mb-4">
+              <img src="assets/logo/teams.svg" alt="" class="w-8 h-8 object-contain" />
+            </div>
+            <h3 class="font-bold text-white text-lg mb-2">Colaboración en tiempo real</h3>
+            <p class="text-teal-100 text-sm">Varios usuarios pueden editar el mismo documento simultáneamente desde Teams o el navegador, con control de versiones que permite revertir cambios en cualquier momento.</p>
+          </div>
+
+          <div class="text-center">
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/10 mb-4">
+              <img src="assets/logo/entra_id.svg" alt="" class="w-8 h-8 object-contain" />
+            </div>
+            <h3 class="font-bold text-white text-lg mb-2">Control de acceso granular</h3>
+            <p class="text-teal-100 text-sm">Define quién puede ver, editar o compartir cada sitio, biblioteca o archivo con permisos detallados basados en roles y grupos de Microsoft Entra ID.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TECNOLOGÍAS QUE POTENCIAN SHAREPOINT ===== -->
+    <section class="section bg-gray-50">
+      <div class="container-site">
+        <header class="text-center mb-12">
+          <p class="section-label mb-2">Tecnologías</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">Tecnologías que potencian SharePoint</h2>
+        </header>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+
+          <a href="tools-teams.html" class="card p-6 flex flex-col items-center text-center cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00AEEF]">
+            <img src="assets/logo/teams.svg" alt="Teams" class="h-12 w-12 mb-3 object-contain" />
+            <h3 class="font-bold text-[#171717] text-sm">Teams</h3>
+            <p class="text-xs text-gray-500 mt-1">Acceso a documentos en canales</p>
+          </a>
+
+          <a href="tools-power-automate.html" class="card p-6 flex flex-col items-center text-center cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00AEEF]">
+            <img src="assets/logo/power_automate.svg" alt="Power Automate" class="h-12 w-12 mb-3 object-contain" />
+            <h3 class="font-bold text-[#171717] text-sm">Power Automate</h3>
+            <p class="text-xs text-gray-500 mt-1">Flujos de aprobación documental</p>
+          </a>
+
+          <a href="tools-detail.html" class="card p-6 flex flex-col items-center text-center cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00AEEF]">
+            <img src="assets/logo/copilot.svg" alt="Copilot" class="h-12 w-12 mb-3 object-contain" />
+            <h3 class="font-bold text-[#171717] text-sm">Copilot</h3>
+            <p class="text-xs text-gray-500 mt-1">Búsqueda y resumen con IA</p>
+          </a>
+
+          <a href="tools-power-apps.html" class="card p-6 flex flex-col items-center text-center cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00AEEF]">
+            <img src="assets/logo/power_apps.svg" alt="Power Apps" class="h-12 w-12 mb-3 object-contain" />
+            <h3 class="font-bold text-[#171717] text-sm">Power Apps</h3>
+            <p class="text-xs text-gray-500 mt-1">Apps conectadas a listas</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="relative section text-white overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <picture><source media="(max-width: 767px)" srcset="assets/cta-tools-mobile.webp" /><img src="assets/cta-tools.webp" alt="" class="w-full h-full object-cover" /></picture>
+      </div>
+      <div class="absolute inset-0 z-0 bg-black/45"></div>
+      <div class="container-site relative z-10 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Construyamos juntos el repositorio de conocimiento de tu empresa</h2>
+        <p class="text-gray-200 mb-8 max-w-xl mx-auto">Hablemos sobre cómo SharePoint puede organizar y proteger la información de tu organización con la asesoría experta de LatinShare.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="contact.html" class="btn-orange text-base">Agendar diagnóstico gratuito</a>
+          <a href="tools.html" class="btn-secondary text-base">Ver todas las herramientas</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-include="partials/footer.html"></div>
+
+  <script src="js/include.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

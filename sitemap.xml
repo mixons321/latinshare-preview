@@ -8,4 +8,21 @@
   <url><loc>https://www.latinshare.com/licenses</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.latinshare.com/events</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.latinshare.com/contact</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.latinshare.com/services/power-platform</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.latinshare.com/services/microsoft-365</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.latinshare.com/services/copilot-ia</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.latinshare.com/services/azure-cloud</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.latinshare.com/services/dynamics-365</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.latinshare.com/tools/copilot</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.latinshare.com/tools/teams</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.latinshare.com/tools/outlook</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.latinshare.com/tools/sharepoint</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.latinshare.com/tools/power-apps</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.latinshare.com/tools/power-automate</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.latinshare.com/tools/power-bi</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.latinshare.com/tools/copilot-studio</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.latinshare.com/tools/dataverse</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.latinshare.com/tools/azure</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.latinshare.com/tools/entra-id</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.latinshare.com/tools/dynamics-365</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
