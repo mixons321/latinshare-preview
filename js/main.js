@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCarousels();
   initAccordions();
   initLicenseTabs();
+  initCaseStudy();
 });
 
 /* ---- Selector de proveedor de licencias ---- */
@@ -69,6 +70,68 @@ function initAccordions() {
       if (icon) icon.classList.toggle('rotate-180', !isOpen);
     });
   });
+}
+
+/* ---- Casos de éxito: autoplay + imagen cambia por caso ----
+   Un solo caso abierto a la vez. Avanza solo cada 5s, se pausa al pasar el
+   mouse por la sección o cuando la pestaña no está visible. La imagen se deriva
+   del nombre del caso (assets/case-study-<nombre>.webp) con fallback a Sura. */
+function initCaseStudy() {
+  const root = document.getElementById('casos-accordion');
+  const img = document.getElementById('case-study-img');
+  if (!root || !img) return;
+  const triggers = Array.from(root.querySelectorAll('[data-case-trigger]'));
+  if (!triggers.length) return;
+
+  const FALLBACK = 'assets/case-study-sura.webp';
+  const imgFor = (btn) => {
+    const logo = btn.querySelector('img');
+    const name = ((logo && logo.getAttribute('alt')) || '').trim().toLowerCase();
+    return name ? 'assets/case-study-' + name + '.webp' : FALLBACK;
+  };
+
+  let current = triggers.findIndex((b) => b.getAttribute('aria-expanded') === 'true');
+  if (current < 0) current = 0;
+  // Recuerda las imágenes por caso que aún no existen para no re-pedirlas (evita 404 en cada ciclo)
+  const failed = new Set();
+
+  function open(idx) {
+    triggers.forEach((btn, i) => {
+      const on = i === idx;
+      btn.setAttribute('aria-expanded', String(on));
+      const panel = btn.nextElementSibling;
+      if (panel) panel.classList.toggle('hidden', !on);
+      const icon = btn.querySelector('[data-case-icon]');
+      if (icon) icon.classList.toggle('rotate-180', on);
+    });
+    const src = imgFor(triggers[idx]);
+    const target = failed.has(src) ? FALLBACK : src;
+    if (img.getAttribute('src') !== target) {
+      img.style.opacity = '0';
+      setTimeout(function () {
+        img.onerror = function () { img.onerror = null; failed.add(src); if (img.src.indexOf(FALLBACK) < 0) img.src = FALLBACK; };
+        img.src = target;
+        img.style.opacity = '1';
+      }, 150);
+    }
+    current = idx;
+  }
+
+  let timer = null;
+  const DELAY = 5000;
+  function tick() { open((current + 1) % triggers.length); }
+  function start() { stop(); timer = setInterval(tick, DELAY); }
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
+
+  triggers.forEach((btn, i) => btn.addEventListener('click', () => { open(i); start(); }));
+
+  const section = root.closest('section') || root;
+  section.addEventListener('mouseenter', stop);
+  section.addEventListener('mouseleave', start);
+  document.addEventListener('visibilitychange', () => { if (document.hidden) { stop(); } else { start(); } });
+
+  open(current);
+  start();
 }
 
 /* ============================================================
