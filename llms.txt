@@ -9,6 +9,7 @@ LatinShare ofrece consultoría, implementación, licenciamiento y capacitación 
 - [Quiénes somos](https://www.latinshare.com/about): Historia (desde 2014), equipo y valores.
 - [Servicios](https://www.latinshare.com/services): Power Platform, Microsoft 365, Copilot e IA, Azure Cloud, Dynamics 365; metodología en 4 fases.
 - [Herramientas](https://www.latinshare.com/tools): Ecosistema Microsoft (Copilot, Teams, Power Apps, Power Automate, Power BI, Azure, Dataverse, Entra ID, Dynamics 365) y soluciones integrales.
+- [Capacitaciones](https://www.latinshare.com/capacitaciones): Formación por herramienta (Power Platform, Microsoft 365, Copilot, ciberseguridad) online, presencial o in-company.
 - [Licencias](https://www.latinshare.com/licenses): Asesoría de licenciamiento Microsoft 365, educacional y Azure; planes y precios.
 - [Eventos](https://www.latinshare.com/events): Talleres y webinars sobre el ecosistema Microsoft.
 - [Contacto](https://www.latinshare.com/contact): Formulario de contacto y cotización.
