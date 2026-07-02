@@ -25,4 +25,6 @@
   <url><loc>https://www.latinshare.com/tools/azure</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.latinshare.com/tools/entra-id</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.latinshare.com/tools/dynamics-365</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.latinshare.com/privacidad</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.latinshare.com/terminos</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
