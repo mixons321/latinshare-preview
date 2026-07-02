@@ -45,16 +45,21 @@ function initMobileMenu() {
   );
 }
 
-/* ---- Carruseles horizontales (data-carousel) ---- */
+/* ---- Carruseles horizontales (data-carousel) ----
+   Los botones prev/next pueden vivir fuera del contenedor del carrusel (p. ej. en
+   el header de la sección), por eso se buscan en la sección/ancestro común más
+   cercano, no solo dentro de [data-carousel]. Los carruseles con su propio script
+   se marcan con [data-carousel-manual] para que este handler los ignore. */
 function initCarousels() {
-  document.querySelectorAll('[data-carousel]').forEach((root) => {
+  document.querySelectorAll('[data-carousel]:not([data-carousel-manual])').forEach((root) => {
     const track = root.querySelector('[data-carousel-track]');
-    const prev = root.querySelector('[data-carousel-prev]');
-    const next = root.querySelector('[data-carousel-next]');
     if (!track) return;
-    const scrollBy = () => Math.min(track.clientWidth * 0.8, 600);
-    prev && prev.addEventListener('click', () => track.scrollBy({ left: -scrollBy(), behavior: 'smooth' }));
-    next && next.addEventListener('click', () => track.scrollBy({ left: scrollBy(), behavior: 'smooth' }));
+    const scope = root.closest('section') || root.parentElement || root;
+    const prev = scope.querySelector('[data-carousel-prev]');
+    const next = scope.querySelector('[data-carousel-next]');
+    const step = () => Math.min(track.clientWidth * 0.85, 600);
+    prev && prev.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+    next && next.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
   });
 }
 
