@@ -1,16 +1,15 @@
 <nav class="fixed top-3 xl:top-6 left-0 right-0 z-[100] mx-auto w-[92%] xl:w-[95%] max-w-[1180px]">
-  <div class="flex items-center justify-between gap-3 bg-white/95 backdrop-blur-md shadow-lg rounded-full px-5 py-2.5 xl:bg-transparent xl:backdrop-blur-0 xl:shadow-none xl:rounded-none xl:px-0 xl:py-0">
+  <!-- Barra única tipo píldora (redondeada en todas las resoluciones) -->
+  <div class="relative flex items-center justify-between gap-3 bg-white/95 backdrop-blur-md shadow-lg rounded-full pl-5 pr-4 xl:pl-8 xl:pr-6 py-2.5">
     <!-- Logo -->
     <a href="index.html" class="flex-shrink-0 flex items-center gap-2">
-      <img src="assets/loog.svg" alt="LatinShare" class="h-11 w-9 xl:h-12 xl:w-10 object-contain" />
-      <span class="flex items-center xl:bg-white/40 xl:backdrop-blur-sm xl:rounded-full xl:px-5 xl:py-1.5">
-        <img src="assets/letraslogo.svg" alt="LatinShare" class="h-5 w-28 sm:h-6 sm:w-32 object-contain brightness-0" />
-      </span>
+      <img src="assets/loog.svg" alt="LatinShare" class="h-10 w-9 object-contain" />
+      <img src="assets/letraslogo.svg" alt="LatinShare" class="h-5 sm:h-6 w-28 sm:w-32 object-contain brightness-0" />
     </a>
 
     <!-- Nav desktop (centrado) — visible solo cuando hay espacio real (xl ≥1280px) -->
     <div class="hidden xl:block absolute left-1/2 -translate-x-1/2">
-      <div class="flex items-center gap-0.5 bg-white shadow-lg rounded-full px-4 py-3 border border-white/50">
+      <div class="flex items-center gap-0.5">
         <a href="about.html"          class="nav-link whitespace-nowrap text-gray-800 px-3 py-2 rounded-full text-[13px] font-semibold border border-transparent hover:text-[#F26522] hover:border-[#F26522] transition-all">Quiénes somos</a>
         <a href="services.html"       class="nav-link whitespace-nowrap text-gray-800 px-3 py-2 rounded-full text-[13px] font-semibold border border-transparent hover:text-[#F26522] hover:border-[#F26522] transition-all">Servicios</a>
         <a href="tools.html"          class="nav-link whitespace-nowrap text-gray-800 px-3 py-2 rounded-full text-[13px] font-semibold border border-transparent hover:text-[#F26522] hover:border-[#F26522] transition-all">Herramientas</a>
@@ -21,8 +20,8 @@
     </div>
 
     <!-- Contacto + toggle móvil -->
-    <div class="flex items-center gap-3">
-      <a href="contact.html" class="hidden xl:inline-flex items-center bg-black text-white px-5 py-2.5 rounded-full text-[13px] font-semibold hover:bg-gray-800 transition-colors shadow-lg whitespace-nowrap">Contacto</a>
+    <div class="flex items-center gap-2">
+      <a href="contact.html" class="hidden xl:inline-flex items-center bg-black text-white px-5 py-2.5 rounded-full text-[13px] font-semibold hover:bg-gray-800 transition-colors shadow-md whitespace-nowrap">Contacto</a>
       <button id="mobile-toggle" type="button" class="xl:hidden inline-flex items-center justify-center rounded-full p-2 text-[#2A3540]" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16" /></svg>
       </button>
@@ -30,7 +29,7 @@
   </div>
 
   <!-- Menú móvil -->
-  <div id="mobile-menu" class="xl:hidden fixed left-0 right-0 bottom-0 bg-white z-50 overflow-y-auto hidden" style="top:80px">
+  <div id="mobile-menu" class="xl:hidden fixed left-0 right-0 bottom-0 bg-white z-50 overflow-y-auto hidden" style="top:76px">
     <div class="px-4 pt-4 pb-8 space-y-1">
       <a href="about.html"          class="block px-4 py-4 rounded-2xl text-[#2A3540] font-semibold hover:bg-orange-50 hover:text-[#F26522]">Quiénes somos</a>
       <a href="services.html"       class="block px-4 py-4 rounded-2xl text-[#2A3540] font-semibold hover:bg-orange-50 hover:text-[#F26522]">Servicios</a>
