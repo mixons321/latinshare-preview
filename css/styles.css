@@ -236,22 +236,54 @@ textarea.form-input { height: auto; min-height: 140px; padding: 16px; resize: ve
 .license-tab.is-active { background: #fff; color: #171717; border-color: var(--color-primary-orange); box-shadow: 0 2px 10px rgba(0,0,0,.08); }
 
 /* ===== Filtro de categorías del catálogo de capacitaciones ===== */
+/* Contenedor: en móvil se desplaza horizontal (una sola fila), en desktop centra y envuelve */
+.cat-tabs {
+  display: flex; gap: 8px; flex-wrap: nowrap;
+  overflow-x: auto; scroll-snap-type: x proximity;
+  -ms-overflow-style: none; scrollbar-width: none;
+  padding-bottom: 6px;
+}
+.cat-tabs::-webkit-scrollbar { display: none; }
+@media (min-width: 768px) { .cat-tabs { flex-wrap: wrap; justify-content: center; overflow: visible; } }
 .cat-tab {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 9px 16px; border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 8px; scroll-snap-align: start;
+  padding: 9px 16px; border-radius: 999px; white-space: nowrap;
   font-family: var(--font-display); font-weight: 600; font-size: 13px;
   color: #4b5563; background: #f3f4f6; border: 1px solid transparent;
-  transition: color .2s, background .2s, border-color .2s, box-shadow .2s; cursor: pointer;
+  transition: color .2s, background .2s, border-color .2s, box-shadow .2s, transform .15s; cursor: pointer;
 }
-.cat-tab:hover { color: var(--color-primary-orange); }
-.cat-tab.is-active { background: #171717; color: #fff; border-color: #171717; box-shadow: 0 4px 14px rgba(0,0,0,.15); }
+.cat-tab img, .cat-tab svg { width: 16px; height: 16px; }
+.cat-tab:hover { color: var(--color-primary-orange); transform: translateY(-1px); }
+/* Activo: se pinta con el color de su categoría (--cat) */
+.cat-tab.is-active {
+  background: var(--cat, #171717); color: #fff; border-color: var(--cat, #171717);
+  box-shadow: 0 6px 16px color-mix(in srgb, var(--cat, #171717) 35%, transparent);
+}
+.cat-tab.is-active:hover { color: #fff; }
 .cat-tab-count {
   display: inline-flex; align-items: center; justify-content: center;
   min-width: 20px; height: 18px; padding: 0 6px; border-radius: 999px;
   font-size: 11px; font-weight: 700; background: rgba(0,0,0,.08); color: inherit;
 }
-.cat-tab.is-active .cat-tab-count { background: rgba(255,255,255,.22); }
-.course-card { cursor: pointer; }
+.cat-tab.is-active .cat-tab-count { background: rgba(255,255,255,.25); }
+
+/* Buscador de cursos */
+.course-search {
+  width: 100%; height: 48px; border-radius: 999px;
+  border: 1px solid #e5e7eb; background: #fff;
+  padding: 0 18px 0 44px; font-size: 14px; font-family: var(--font-body); color: #171717;
+  transition: border-color .2s, box-shadow .2s;
+}
+.course-search::placeholder { color: #9ca3af; }
+.course-search:focus { outline: none; border-color: var(--color-primary-orange); box-shadow: 0 0 0 3px rgba(242,101,34,.12); }
+
+/* Tarjeta de curso: acento de color por categoría (--cat) + efecto de profundidad */
+.course-card { cursor: pointer; border-top: 3px solid var(--cat, #e5e7eb); position: relative; }
+.course-card::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  box-shadow: inset 0 0 0 0 var(--cat, transparent); opacity: 0; transition: opacity .3s;
+}
+.course-card:hover::after { opacity: .12; box-shadow: inset 0 0 0 2px var(--cat, transparent); }
 
 /* Ficha rápida (chips) del modal de curso */
 .stat-chip {

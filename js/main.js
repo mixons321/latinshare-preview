@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLicenseTabs();
   initCaseStudy();
   initCourseCatalog();
+  initContactPrefill();
 });
 
 /* ---- Selector de proveedor de licencias ---- */
@@ -140,21 +141,48 @@ function initCaseStudy() {
   start();
 }
 
-/* ---- Catálogo de capacitaciones: filtro por categoría + modal de detalle ---- */
+/* ---- Catálogo de capacitaciones: buscador + filtro por categoría + modal ---- */
 function initCourseCatalog() {
   const tabs = Array.from(document.querySelectorAll('[data-cat-tab]'));
   const cards = Array.from(document.querySelectorAll('[data-course]'));
   if (!tabs.length || !cards.length) return;
+  const search = document.querySelector('[data-course-search]');
+  const empty = document.querySelector('[data-course-empty]');
+  let activeCat = 'all';
 
-  function activate(cat) {
-    tabs.forEach((t) => {
-      const on = t.getAttribute('data-cat-tab') === cat;
-      t.classList.toggle('is-active', on);
-      t.setAttribute('aria-selected', String(on));
+  const norm = (s) => (s || '').toLowerCase().normalize('NFD').replace(new RegExp('[̀-ͯ]', 'g'), '');
+  // Texto buscable por tarjeta (categoría + título + resumen + descripción completa)
+  const haystack = new Map();
+  cards.forEach((c) => {
+    const t = c.querySelector('[data-course-title]');
+    const p = c.querySelector('p');
+    const f = c.querySelector('[data-course-full]');
+    haystack.set(c, norm([c.getAttribute('data-cat-label') || '', t ? t.textContent : '', p ? p.textContent : '', f ? f.textContent : ''].join(' ')));
+  });
+
+  function apply() {
+    const q = norm(search ? search.value.trim() : '');
+    let shown = 0;
+    cards.forEach((c) => {
+      const catOk = activeCat === 'all' || c.getAttribute('data-cat') === activeCat;
+      const qOk = !q || haystack.get(c).indexOf(q) >= 0;
+      const vis = catOk && qOk;
+      c.classList.toggle('hidden', !vis);
+      if (vis) shown++;
     });
-    cards.forEach((c) => c.classList.toggle('hidden', c.getAttribute('data-cat') !== cat));
+    if (empty) empty.classList.toggle('hidden', shown !== 0);
   }
-  tabs.forEach((t) => t.addEventListener('click', () => activate(t.getAttribute('data-cat-tab'))));
+
+  tabs.forEach((t) => t.addEventListener('click', () => {
+    activeCat = t.getAttribute('data-cat-tab');
+    tabs.forEach((x) => {
+      const on = x === t;
+      x.classList.toggle('is-active', on);
+      x.setAttribute('aria-selected', String(on));
+    });
+    apply();
+  }));
+  if (search) search.addEventListener('input', apply);
 
   /* Modal de detalle */
   const modal = document.getElementById('course-modal');
@@ -168,10 +196,12 @@ function initCourseCatalog() {
     const mTemario = modal.querySelector('[data-cm-temario]');
     const mTemarioWrap = modal.querySelector('[data-cm-temario-wrap]');
     const mPanel = modal.querySelector('[role="dialog"]');
+    const mCta = modal.querySelector('[data-cm-cta]');
     const txt = (el, sel) => { const n = el.querySelector(sel); return n ? n.textContent : ''; };
 
     function openModal(card) {
-      if (mTitle) mTitle.textContent = txt(card, '[data-course-title]');
+      const title = txt(card, '[data-course-title]');
+      if (mTitle) mTitle.textContent = title;
       if (mCat) mCat.textContent = card.getAttribute('data-cat-label') || '';
       if (mDur) mDur.textContent = card.getAttribute('data-dur') || '';
       if (mMax) mMax.textContent = card.getAttribute('data-max') || '';
@@ -180,6 +210,7 @@ function initCourseCatalog() {
       const tem = card.querySelector('[data-course-temario]');
       if (mTemario) mTemario.innerHTML = tem ? tem.innerHTML : '';
       if (mTemarioWrap) mTemarioWrap.classList.toggle('hidden', !tem || !tem.children.length);
+      if (mCta) mCta.setAttribute('href', 'contact.html?curso=' + encodeURIComponent(title));
       if (mPanel) mPanel.scrollTop = 0;
       modal.classList.remove('hidden');
       document.body.style.overflow = 'hidden';
@@ -196,7 +227,27 @@ function initCourseCatalog() {
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal(); });
   }
 
-  activate(tabs[0].getAttribute('data-cat-tab'));
+  apply();
+}
+
+/* ---- Prellenado del formulario de contacto según ?curso= o ?medida= ---- */
+function initContactPrefill() {
+  let params;
+  try { params = new URLSearchParams(location.search); } catch (e) { return; }
+  const curso = params.get('curso');
+  const medida = params.get('medida');
+  if (!curso && !medida) return;
+  const form = document.querySelector('.js-contact-form');
+  if (!form) return;
+  const ta = form.querySelector('textarea[name="mensaje"]');
+  if (!ta) return;
+  if (curso) {
+    ta.value = 'Hola, me interesa la capacitación "' + curso + '". ¿Podrían enviarme más información sobre fechas, modalidad y valores?';
+  } else {
+    ta.value = 'Hola, me gustaría diseñar una capacitación a medida para mi equipo. Cuéntenme cómo podemos avanzar.';
+  }
+  const target = document.getElementById('form') || form;
+  if (target) setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 250);
 }
 
 /* ============================================================
