@@ -234,3 +234,21 @@ textarea.form-input { height: auto; min-height: 140px; padding: 16px; resize: ve
 .license-tab img { height: 20px; width: auto; display: block; }
 .license-tab:hover { color: var(--color-primary-orange); }
 .license-tab.is-active { background: #fff; color: #171717; border-color: var(--color-primary-orange); box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+
+/* ===== Filtro de categorías del catálogo de capacitaciones ===== */
+.cat-tab {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 9px 16px; border-radius: 999px;
+  font-family: var(--font-display); font-weight: 600; font-size: 13px;
+  color: #4b5563; background: #f3f4f6; border: 1px solid transparent;
+  transition: color .2s, background .2s, border-color .2s, box-shadow .2s; cursor: pointer;
+}
+.cat-tab:hover { color: var(--color-primary-orange); }
+.cat-tab.is-active { background: #171717; color: #fff; border-color: #171717; box-shadow: 0 4px 14px rgba(0,0,0,.15); }
+.cat-tab-count {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 20px; height: 18px; padding: 0 6px; border-radius: 999px;
+  font-size: 11px; font-weight: 700; background: rgba(0,0,0,.08); color: inherit;
+}
+.cat-tab.is-active .cat-tab-count { background: rgba(255,255,255,.22); }
+.course-card { cursor: pointer; }

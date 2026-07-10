@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAccordions();
   initLicenseTabs();
   initCaseStudy();
+  initCourseCatalog();
 });
 
 /* ---- Selector de proveedor de licencias ---- */
@@ -137,6 +138,54 @@ function initCaseStudy() {
 
   open(current);
   start();
+}
+
+/* ---- Catálogo de capacitaciones: filtro por categoría + modal de detalle ---- */
+function initCourseCatalog() {
+  const tabs = Array.from(document.querySelectorAll('[data-cat-tab]'));
+  const cards = Array.from(document.querySelectorAll('[data-course]'));
+  if (!tabs.length || !cards.length) return;
+
+  function activate(cat) {
+    tabs.forEach((t) => {
+      const on = t.getAttribute('data-cat-tab') === cat;
+      t.classList.toggle('is-active', on);
+      t.setAttribute('aria-selected', String(on));
+    });
+    cards.forEach((c) => c.classList.toggle('hidden', c.getAttribute('data-cat') !== cat));
+  }
+  tabs.forEach((t) => t.addEventListener('click', () => activate(t.getAttribute('data-cat-tab'))));
+
+  /* Modal de detalle */
+  const modal = document.getElementById('course-modal');
+  if (modal) {
+    const mTitle = modal.querySelector('[data-cm-title]');
+    const mCat = modal.querySelector('[data-cm-cat]');
+    const mDur = modal.querySelector('[data-cm-dur]');
+    const mDesc = modal.querySelector('[data-cm-desc]');
+    const txt = (el, sel) => { const n = el.querySelector(sel); return n ? n.textContent : ''; };
+
+    function openModal(card) {
+      if (mTitle) mTitle.textContent = txt(card, '[data-course-title]');
+      if (mCat) mCat.textContent = card.getAttribute('data-cat-label') || '';
+      if (mDur) mDur.textContent = card.getAttribute('data-dur') || '';
+      if (mDesc) mDesc.textContent = txt(card, '[data-course-full]');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() { modal.classList.add('hidden'); document.body.style.overflow = ''; }
+
+    cards.forEach((c) => {
+      c.addEventListener('click', () => openModal(c));
+      c.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(c); }
+      });
+    });
+    modal.querySelectorAll('[data-cm-close]').forEach((b) => b.addEventListener('click', closeModal));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal(); });
+  }
+
+  activate(tabs[0].getAttribute('data-cat-tab'));
 }
 
 /* ============================================================
