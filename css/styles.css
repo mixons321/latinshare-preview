@@ -299,3 +299,25 @@ textarea.form-input { height: auto; min-height: 140px; padding: 16px; resize: ve
   content: ""; position: absolute; left: 2px; top: 7px;
   width: 7px; height: 7px; border-radius: 2px; background: var(--color-primary-orange);
 }
+
+/* ===== Formulario de contacto (labels + chips de perfil) ===== */
+.form-label {
+  display: block; font-family: var(--font-display); font-weight: 600;
+  font-size: 13px; color: #374151; margin-bottom: 6px;
+}
+.req { color: var(--color-primary-orange); }
+/* Chips seleccionables (radios estilizados) */
+.chip-option { display: inline-flex; cursor: pointer; }
+.chip-option input { position: absolute; opacity: 0; width: 0; height: 0; }
+.chip-option span {
+  display: inline-block; padding: 8px 16px; border-radius: 999px;
+  border: 1.5px solid #e5e7eb; background: #fff;
+  font-family: var(--font-display); font-weight: 600; font-size: 13px; color: #4b5563;
+  transition: color .15s, background .15s, border-color .15s, box-shadow .15s;
+}
+.chip-option:hover span { border-color: var(--color-primary-orange); color: var(--color-primary-orange); }
+.chip-option input:checked + span {
+  background: var(--color-primary-orange); border-color: var(--color-primary-orange); color: #fff;
+  box-shadow: 0 4px 12px rgba(242,101,34,.28);
+}
+.chip-option input:focus-visible + span { box-shadow: 0 0 0 3px rgba(242,101,34,.25); }

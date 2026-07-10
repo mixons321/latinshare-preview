@@ -134,40 +134,71 @@
     <!-- ===== FORMULARIO "¡Contáctanos!" ===== -->
     <section id="form" class="section bg-gray-50">
       <div class="container-site max-w-2xl">
-        <header class="text-center mb-10">
-          <p class="section-label mb-2">Transformamos tu empresa</p>
+        <header class="text-center mb-8">
+          <p class="section-label mb-2">Hablemos</p>
           <h2 class="text-3xl md:text-4xl font-bold text-[#171717]">&#161;Cont&#225;ctanos!</h2>
+          <p class="mt-3 text-gray-600">Completa el formulario y un especialista te responde en menos de 24 horas.</p>
         </header>
-        <form class="js-contact-form space-y-4">
+        <form class="js-contact-form bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8">
           <!-- Honeypot anti-spam: oculto a humanos, lo llenan los bots -->
           <div class="hp" aria-hidden="true" style="position:absolute;left:-9999px"><label>No completar este campo<input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
-          <input class="form-input" type="text" name="nombre" placeholder="Nombre y Apellido" required />
-          <input class="form-input" type="text" name="empresa" placeholder="Nombre de la empresa" />
-          <input class="form-input" type="tel" name="telefono" placeholder="Teléfono (indique código de país)" />
-          <input class="form-input" type="email" name="email" placeholder="Email" required />
-          <input class="form-input" type="text" name="cargo" placeholder="Cargo y puesto" />
-          <select class="form-input" name="pais" required>
-            <option value="">País</option>
-            <option value="CL">Chile</option>
-            <option value="MX">México</option>
-            <option value="OTRO">Otro</option>
-          </select>
-          <fieldset class="grid grid-cols-2 gap-2">
-            <legend class="text-sm text-gray-600 mb-2 col-span-2">Perfil de la organización</legend>
-            <label class="flex items-center gap-2 text-sm"><input type="radio" name="perfil" value="startup" /> Startup</label>
-            <label class="flex items-center gap-2 text-sm"><input type="radio" name="perfil" value="corporation" /> Corporación</label>
-            <label class="flex items-center gap-2 text-sm"><input type="radio" name="perfil" value="nonprofit" /> Organización sin fines de lucro</label>
-            <label class="flex items-center gap-2 text-sm"><input type="radio" name="perfil" value="medium" /> Empresa mediana</label>
-            <label class="flex items-center gap-2 text-sm"><input type="radio" name="perfil" value="education" /> Sector educativo</label>
-            <label class="flex items-center gap-2 text-sm"><input type="radio" name="perfil" value="other" /> Otro</label>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-5">
+            <div class="sm:col-span-2">
+              <label for="c-nombre" class="form-label">Nombre y apellido <span class="req">*</span></label>
+              <input id="c-nombre" class="form-input" type="text" name="nombre" autocomplete="name" placeholder="Ej: María Pérez" required />
+            </div>
+            <div>
+              <label for="c-email" class="form-label">Email <span class="req">*</span></label>
+              <input id="c-email" class="form-input" type="email" name="email" autocomplete="email" inputmode="email" placeholder="tucorreo@empresa.com" required />
+            </div>
+            <div>
+              <label for="c-telefono" class="form-label">Teléfono</label>
+              <input id="c-telefono" class="form-input" type="tel" name="telefono" autocomplete="tel" inputmode="tel" placeholder="+56 9 1234 5678" />
+            </div>
+            <div>
+              <label for="c-empresa" class="form-label">Empresa</label>
+              <input id="c-empresa" class="form-input" type="text" name="empresa" autocomplete="organization" placeholder="Nombre de tu empresa" />
+            </div>
+            <div>
+              <label for="c-cargo" class="form-label">Cargo</label>
+              <input id="c-cargo" class="form-input" type="text" name="cargo" autocomplete="organization-title" placeholder="Tu cargo o rol" />
+            </div>
+            <div class="sm:col-span-2">
+              <label for="c-pais" class="form-label">País <span class="req">*</span></label>
+              <select id="c-pais" class="form-input" name="pais" autocomplete="country" required>
+                <option value="">Selecciona tu país</option>
+                <option value="CL">Chile</option>
+                <option value="MX">México</option>
+                <option value="OTRO">Otro</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="mt-6">
+            <legend class="form-label mb-2.5">Perfil de tu organización</legend>
+            <div class="flex flex-wrap gap-2">
+              <label class="chip-option"><input type="radio" name="perfil" value="startup" /><span>Startup</span></label>
+              <label class="chip-option"><input type="radio" name="perfil" value="corporation" /><span>Corporación</span></label>
+              <label class="chip-option"><input type="radio" name="perfil" value="medium" /><span>Empresa mediana</span></label>
+              <label class="chip-option"><input type="radio" name="perfil" value="nonprofit" /><span>Sin fines de lucro</span></label>
+              <label class="chip-option"><input type="radio" name="perfil" value="education" /><span>Sector educativo</span></label>
+              <label class="chip-option"><input type="radio" name="perfil" value="other" /><span>Otro</span></label>
+            </div>
           </fieldset>
-          <textarea class="form-input" name="mensaje" rows="4" placeholder="Necesidad y comentarios" required></textarea>
-          <label class="flex items-start gap-2 text-sm text-gray-600">
-            <input type="checkbox" data-consent required class="mt-1" />
-            <span>Autorizo a LatinShare a tratar mis datos para responder esta solicitud, conforme a la <a href="privacidad.html" class="underline" target="_blank" rel="noopener">Política de privacidad</a> (Ley 19.628).</span>
+
+          <div class="mt-6">
+            <label for="c-mensaje" class="form-label">¿En qué te ayudamos? <span class="req">*</span></label>
+            <textarea id="c-mensaje" class="form-input" name="mensaje" rows="4" placeholder="Cuéntanos brevemente tu necesidad o proyecto…" required></textarea>
+          </div>
+
+          <label class="flex items-start gap-2.5 text-sm text-gray-600 mt-5">
+            <input type="checkbox" data-consent required class="mt-0.5 w-4 h-4 accent-[#F26522] flex-shrink-0" />
+            <span>Autorizo a LatinShare a tratar mis datos para responder esta solicitud, conforme a la <a href="privacidad.html" class="underline hover:text-[#F26522]" target="_blank" rel="noopener">Política de privacidad</a> (Ley 19.628).</span>
           </label>
-          <button type="submit" class="btn-primary w-full">Enviar</button>
-          <p class="js-form-status text-sm text-center" role="status" aria-live="polite"></p>
+
+          <button type="submit" class="btn-primary w-full mt-6">Enviar mensaje</button>
+          <p class="js-form-status text-sm text-center mt-3" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
