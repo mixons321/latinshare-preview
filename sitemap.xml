@@ -25,6 +25,12 @@
   <url><loc>https://www.latinshare.com/tools/azure</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.latinshare.com/tools/entra-id</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.latinshare.com/tools/dynamics-365</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.latinshare.com/solutions/app-development</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.latinshare.com/solutions/modern-work</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.latinshare.com/solutions/rpa-automation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.latinshare.com/solutions/business-intelligence</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.latinshare.com/solutions/security-governance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.latinshare.com/solutions/ai-assistants</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.latinshare.com/privacidad</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://www.latinshare.com/terminos</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

@@ -1,22 +1,39 @@
 # LatinShare
 
-> Microsoft Solutions Partner especializado en acelerar la productividad de organizaciones en Latinoamérica con Microsoft 365, Power Platform, Azure, Dynamics 365 y Copilot.
+> Microsoft Solutions Partner que ayuda a empresas de Latinoamérica a trabajar mejor: ahorrar tiempo, reducir errores y tomar mejores decisiones con Microsoft 365, Power Platform, Copilot, Azure y Dynamics 365.
 
-LatinShare ofrece consultoría, implementación, licenciamiento y capacitación sobre el ecosistema Microsoft. Opera en Chile, México y la región. Contacto: contacto@latinshare.com.
+LatinShare acompaña a organizaciones en su transformación digital con consultoría, implementación, licenciamiento y capacitación sobre el ecosistema Microsoft. Partner certificado con más de 10 años de experiencia y más de 250 proyectos. Opera en Chile, México y toda la región. La primera conversación (diagnóstico) es gratuita.
+
+- Contacto: contacto@latinshare.com · +56 9 8289 8422 (Chile) · +52 55 6828 7346 (México)
+- Ideal para: empresas que quieren digitalizar procesos, colaborar mejor, automatizar tareas, analizar datos, adoptar IA y ordenar su licenciamiento Microsoft.
 
 ## Páginas
 - [Inicio](https://www.latinshare.com/): Propuesta de valor, soluciones, tecnologías y licencias.
-- [Quiénes somos](https://www.latinshare.com/about): Historia (desde 2014), equipo y valores.
-- [Servicios](https://www.latinshare.com/services): Power Platform, Microsoft 365, Copilot e IA, Azure Cloud, Dynamics 365; metodología en 4 fases.
-- [Herramientas](https://www.latinshare.com/tools): Ecosistema Microsoft (Copilot, Teams, Power Apps, Power Automate, Power BI, Azure, Dataverse, Entra ID, Dynamics 365) y soluciones integrales.
-- [Capacitaciones](https://www.latinshare.com/capacitaciones): Formación por herramienta (Power Platform, Microsoft 365, Copilot, ciberseguridad) online, presencial o in-company.
-- [Licencias](https://www.latinshare.com/licenses): Asesoría de licenciamiento Microsoft 365, educacional y Azure; planes y precios.
-- [Eventos](https://www.latinshare.com/events): Talleres y webinars sobre el ecosistema Microsoft.
-- [Contacto](https://www.latinshare.com/contact): Formulario de contacto y cotización.
+- [Quiénes somos](https://www.latinshare.com/about): Partner Microsoft desde 2014, historia, valores y por qué elegirnos.
+- [Servicios](https://www.latinshare.com/services): Power Platform, Microsoft 365, Copilot e IA, Azure Cloud y Dynamics 365, con metodología en 4 fases (descubrimiento, diseño, desarrollo, adopción).
+- [Herramientas](https://www.latinshare.com/tools): Ecosistema Microsoft completo (Copilot, Teams, SharePoint, Power Apps, Power Automate, Power BI, Azure, Dataverse, Entra ID, Dynamics 365).
+- [Capacitaciones](https://www.latinshare.com/capacitaciones): Catálogo de más de 30 cursos en 5 categorías (Microsoft 365 y Teams, SharePoint, Power Platform, Ciberseguridad, Copilot e IA), online, presencial o in-company, con temario y duración por curso.
+- [Licencias](https://www.latinshare.com/licenses): Asesoría y optimización de licencias Microsoft, Adobe, Autodesk y Zoom; planes y precios.
+- [Eventos](https://www.latinshare.com/events): Talleres y webinars gratuitos sobre el ecosistema Microsoft.
+- [Contacto](https://www.latinshare.com/contact): Formulario de contacto y solicitud de cotización.
 
-## Servicios principales
-- Modern Work con Microsoft 365
-- Automatización con Power Platform (low-code)
-- Datos y analítica en Azure
-- IA aplicada con Copilot y Copilot Studio
-- Licenciamiento y soporte CSP
+## Soluciones para cada necesidad
+- [Desarrollo de Aplicaciones](https://www.latinshare.com/solutions/app-development): Apps a medida con Power Apps y Azure para digitalizar procesos y dejar atrás las planillas.
+- [Trabajo Moderno](https://www.latinshare.com/solutions/modern-work): Colaboración híbrida y segura con Microsoft 365, Teams y SharePoint.
+- [Automatización de Procesos y RPA](https://www.latinshare.com/solutions/rpa-automation): Automatización con Power Automate para eliminar tareas repetitivas y reducir errores.
+- [Inteligencia de Negocio](https://www.latinshare.com/solutions/business-intelligence): Dashboards y reportes con Power BI para decidir con datos en tiempo real.
+- [Seguridad, Gobierno y Cumplimiento](https://www.latinshare.com/solutions/security-governance): Protección Zero Trust con Entra ID, Defender y Purview.
+- [Asistentes con IA](https://www.latinshare.com/solutions/ai-assistants): Agentes de IA personalizados con Copilot Studio que responden y atienden 24/7.
+
+## Qué resolvemos (beneficios)
+- Ahorrar horas de trabajo automatizando tareas manuales y repetitivas.
+- Colaborar y comunicarse mejor, trabajando desde cualquier lugar de forma segura.
+- Convertir datos dispersos en decisiones claras y oportunas.
+- Adoptar inteligencia artificial de forma segura y productiva.
+- Optimizar la inversión en licencias y reducir riesgos de seguridad.
+
+## Por qué LatinShare
+- Microsoft Solutions Partner certificado.
+- Más de 10 años de experiencia y más de 250 proyectos en la región.
+- Acompañamiento de punta a punta: del diagnóstico a la adopción.
+- Clientes en banca, salud, retail, educación y servicios (Sura, Instore, Davila, entre otros).
