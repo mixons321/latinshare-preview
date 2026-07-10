@@ -162,14 +162,25 @@ function initCourseCatalog() {
     const mTitle = modal.querySelector('[data-cm-title]');
     const mCat = modal.querySelector('[data-cm-cat]');
     const mDur = modal.querySelector('[data-cm-dur]');
+    const mMax = modal.querySelector('[data-cm-max]');
+    const mMod = modal.querySelector('[data-cm-modalidad]');
     const mDesc = modal.querySelector('[data-cm-desc]');
+    const mTemario = modal.querySelector('[data-cm-temario]');
+    const mTemarioWrap = modal.querySelector('[data-cm-temario-wrap]');
+    const mPanel = modal.querySelector('[role="dialog"]');
     const txt = (el, sel) => { const n = el.querySelector(sel); return n ? n.textContent : ''; };
 
     function openModal(card) {
       if (mTitle) mTitle.textContent = txt(card, '[data-course-title]');
       if (mCat) mCat.textContent = card.getAttribute('data-cat-label') || '';
       if (mDur) mDur.textContent = card.getAttribute('data-dur') || '';
+      if (mMax) mMax.textContent = card.getAttribute('data-max') || '';
+      if (mMod) mMod.textContent = card.getAttribute('data-modalidad') || '';
       if (mDesc) mDesc.textContent = txt(card, '[data-course-full]');
+      const tem = card.querySelector('[data-course-temario]');
+      if (mTemario) mTemario.innerHTML = tem ? tem.innerHTML : '';
+      if (mTemarioWrap) mTemarioWrap.classList.toggle('hidden', !tem || !tem.children.length);
+      if (mPanel) mPanel.scrollTop = 0;
       modal.classList.remove('hidden');
       document.body.style.overflow = 'hidden';
     }

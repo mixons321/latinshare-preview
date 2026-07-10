@@ -252,3 +252,18 @@ textarea.form-input { height: auto; min-height: 140px; padding: 16px; resize: ve
 }
 .cat-tab.is-active .cat-tab-count { background: rgba(255,255,255,.22); }
 .course-card { cursor: pointer; }
+
+/* Ficha rápida (chips) del modal de curso */
+.stat-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 600; color: #4b5563;
+  background: #f3f4f6; padding: 6px 12px; border-radius: 999px;
+}
+/* Temario del modal: viñeta cuadrada naranja */
+.course-temario li {
+  position: relative; padding-left: 20px; line-height: 1.45; margin-bottom: 8px;
+}
+.course-temario li::before {
+  content: ""; position: absolute; left: 2px; top: 7px;
+  width: 7px; height: 7px; border-radius: 2px; background: var(--color-primary-orange);
+}
