@@ -17,6 +17,9 @@ LatinShare acompaña a organizaciones en su transformación digital con consulto
 - [Eventos](https://www.latinshare.com/events): Talleres y webinars gratuitos sobre el ecosistema Microsoft.
 - [Contacto](https://www.latinshare.com/contact): Formulario de contacto y solicitud de cotización.
 
+## Desarrollo con IA — Vibecoding y Agentes de IA (destacado)
+- [Vibecoding y Agentes de IA](https://www.latinshare.com/services/vibecoding): Desarrollamos software, automatizaciones y agentes de IA empresariales a medida con vibecoding (desarrollo asistido por inteligencia artificial), llevando ideas a producción en días, no en meses. Construimos agentes con Copilot Studio y Azure AI para atención al cliente 24/7, soporte interno de TI/RRHH, asistentes de ventas y copilotos de datos. Seguro y gobernado sobre la nube de Microsoft. Incluye capacitación de equipos en vibecoding e IA.
+
 ## Soluciones para cada necesidad
 - [Desarrollo de Aplicaciones](https://www.latinshare.com/solutions/app-development): Apps a medida con Power Apps y Azure para digitalizar procesos y dejar atrás las planillas.
 - [Trabajo Moderno](https://www.latinshare.com/solutions/modern-work): Colaboración híbrida y segura con Microsoft 365, Teams y SharePoint.
@@ -26,6 +29,7 @@ LatinShare acompaña a organizaciones en su transformación digital con consulto
 - [Asistentes con IA](https://www.latinshare.com/solutions/ai-assistants): Agentes de IA personalizados con Copilot Studio que responden y atienden 24/7.
 
 ## Qué resolvemos (beneficios)
+- Crear software y agentes de IA a medida en tiempo récord con vibecoding.
 - Ahorrar horas de trabajo automatizando tareas manuales y repetitivas.
 - Colaborar y comunicarse mejor, trabajando desde cualquier lugar de forma segura.
 - Convertir datos dispersos en decisiones claras y oportunas.
