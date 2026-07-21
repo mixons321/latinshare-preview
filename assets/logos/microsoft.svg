@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" role="img" aria-label="Microsoft">
-  <rect x="1"  y="1"  width="10" height="10" fill="#F25022"/>
-  <rect x="12" y="1"  width="10" height="10" fill="#7FBA00"/>
-  <rect x="1"  y="12" width="10" height="10" fill="#00A4EF"/>
-  <rect x="12" y="12" width="10" height="10" fill="#FFB900"/>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2H11.5032V11.5032H2V2Z" fill="#F35325"/>
+<path d="M12.4531 2H21.9564V11.5032H12.4531V2Z" fill="#81BC06"/>
+<path d="M2 12.4536H11.5032V21.9569H2V12.4536Z" fill="#05A6F0"/>
+<path d="M12.4531 12.4536H21.9564V21.9569H12.4531V12.4536Z" fill="#FFBA08"/>
 </svg>
